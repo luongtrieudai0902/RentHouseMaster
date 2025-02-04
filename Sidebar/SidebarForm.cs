@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace Sidebar
 {
-    public partial class Form1 : Form
+    public partial class SidebarForm : Form
     {
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -18,7 +18,7 @@ namespace Sidebar
             int nWidthEllipse,
             int nHeightEllipse
         );
-        public Form1()
+        public SidebarForm()
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None; // Remove window border
@@ -30,10 +30,7 @@ namespace Sidebar
         }
 
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {

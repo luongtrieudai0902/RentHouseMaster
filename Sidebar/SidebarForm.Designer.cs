@@ -1,6 +1,6 @@
 ﻿namespace Sidebar
 {
-    partial class Form1
+    partial class SidebarForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SidebarForm));
             sidebar = new Panel();
             btnSetting = new Button();
             btnReport = new Button();
@@ -826,7 +826,7 @@
             propertiesBox.TabIndex = 0;
             propertiesBox.TabStop = false;
             // 
-            // Form1
+            // SidebarForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -844,10 +844,9 @@
             Controls.Add(sidebar);
             ForeColor = Color.White;
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
+            Name = "SidebarForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
-            Load += Form1_Load;
+            
             sidebar.ResumeLayout(false);
             topPanel.ResumeLayout(false);
             topPanel.PerformLayout();
