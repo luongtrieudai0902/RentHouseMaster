@@ -7,7 +7,7 @@ namespace Models.Services
     public class NhanVienServices
     {
         public void GhiNhanSoDien(string dienID, string taiSanID, NhanVien nhanVien, int thang, int soDien)
-        { 
+        {
             if (nhanVien.DSChiSoDien == null)
             {
                 nhanVien.DSChiSoDien = new List<Dien>();
@@ -107,5 +107,7 @@ namespace Models.Services
             hoaDon.TienDichVu = tienDichVu;
         }
     }
+
+}
 
             

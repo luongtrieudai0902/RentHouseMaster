@@ -6,7 +6,7 @@ namespace Models.Services
 {
     public class KhachThueServices 
     {
-        public void DangKyThongTin(KhachThue khachThue, string tenKhachHang, int CCCD, string email, string soDienThoai)
+        public void DangKyThongTin(KhachThue khachThue, string tenKhachHang, string CCCD, string email, string soDienThoai)
 		{
 			khachThue.TenKhachThue = tenKhachHang;
 			khachThue.CCCD = CCCD;
