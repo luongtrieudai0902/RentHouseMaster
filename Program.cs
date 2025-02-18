@@ -1,6 +1,6 @@
-using LearningWinform.Forms;
+using RentHouseMaster.Forms;
 
-namespace RentHouseMaster.Forms
+namespace RentHouseMaster
 {
     internal static class Program
     {
@@ -13,7 +13,7 @@ namespace RentHouseMaster.Forms
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Sidebar());
+            Application.Run(new LoginForm());
         }
     }
 }
