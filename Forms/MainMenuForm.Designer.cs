@@ -74,6 +74,8 @@
             panelMenu.Name = "panelMenu";
             panelMenu.Size = new Size(1240, 65);
             panelMenu.TabIndex = 1;
+            panelMenu.MouseDown += mouse_Down;
+            panelMenu.MouseMove += mouse_Move;
             // 
             // panelMenuBtn
             // 

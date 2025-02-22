@@ -13,7 +13,7 @@ namespace RentHouseMaster.Forms
 {
     public partial class MainMenuForm : Form
     {
-
+        public Point MouseLocation;
         public MainMenuForm()
         {
             InitializeComponent();
@@ -44,19 +44,32 @@ namespace RentHouseMaster.Forms
         }
 
         //highlight the button when it's clicked
-        private void btn_Hover(Button btn)
+        private void btn_Hover(Button clickedBtn)
         {
-            if (btn.BackColor == Color.White)
-            {
-                btn.BackColor = Color.FromArgb(50, 105, 232);
-                btn.ForeColor = Color.White;
-            }
-            else
-            {
-                btn.BackColor = Color.White;
-                btn.ForeColor = Color.Black;
-            }
+            // Reset all buttons to default color
+            ResetButtonColors();
+
+            // Highlight the clicked button
+            clickedBtn.BackColor = Color.FromArgb(50, 105, 232);
+            clickedBtn.ForeColor = Color.White;
         }
+
+        // Reset all buttons to default color
+        private void ResetButtonColors()
+        {
+            btnDangkyLuuTru.BackColor = Color.White;
+            btnDangkyLuuTru.ForeColor = Color.Black;
+
+            btnQuanlyPhong.BackColor = Color.White;
+            btnQuanlyPhong.ForeColor = Color.Black;
+
+            btnQuanlyDienNuoc.BackColor = Color.White;
+            btnQuanlyDienNuoc.ForeColor = Color.Black;
+
+            btnQuanlyDichVu.BackColor = Color.White;
+            btnQuanlyDichVu.ForeColor = Color.Black;
+        }
+
 
         //quan ly luu tru button click event (main button)
         private void btnQuanlyLuuTru_Click(object sender, EventArgs e)
@@ -69,11 +82,11 @@ namespace RentHouseMaster.Forms
             btnQuanlyDienNuoc.Visible = !btnQuanlyDienNuoc.Visible;
             btnQuanlyDichVu.Visible = !btnQuanlyDichVu.Visible;
         }
-        
+
         //all the menu buttons under the quan ly luu tru buttons
         private void btnDangkyLuuTru_Click(object sender, EventArgs e)
         {
-            btn_Hover((Button) sender);
+            btn_Hover((Button)sender);
         }
 
         private void btnQuanlyPhong_Click(object sender, EventArgs e)
@@ -95,6 +108,21 @@ namespace RentHouseMaster.Forms
         private void btnDangxuat_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void mouse_Down(object sender, MouseEventArgs e)
+        {
+            MouseLocation = new Point(-e.X, -e.Y);
+        }
+
+        private void mouse_Move(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Point newMousePoint = Control.MousePosition;
+                newMousePoint.Offset(MouseLocation.X, MouseLocation.Y);
+                Location = newMousePoint;
+            }
         }
     }
 }
