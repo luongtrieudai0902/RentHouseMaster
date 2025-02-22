@@ -28,21 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenuForm));
             panelShadow = new Panel();
             panelMenu = new Panel();
+            panelMenuBtn = new Panel();
+            btnMinimize = new Button();
+            btnClose = new Button();
+            btnMaximize = new Button();
             labelMenu = new Label();
             logoBox = new PictureBox();
             panelSidebar = new Panel();
-            panelNav = new Panel();
             btnQuanlyDichVu = new Button();
-            btnDangxuat = new Button();
             btnQuanlyDienNuoc = new Button();
             btnQuanlyPhong = new Button();
+            panelNav = new Panel();
+            btnDangxuat = new Button();
             btnDangkyLuuTru = new Button();
             btnQuanlyLuuTru = new Button();
             panelContent = new Panel();
             panelShadow.SuspendLayout();
             panelMenu.SuspendLayout();
+            panelMenuBtn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)logoBox).BeginInit();
             panelSidebar.SuspendLayout();
             SuspendLayout();
@@ -54,25 +60,73 @@
             panelShadow.Dock = DockStyle.Top;
             panelShadow.Location = new Point(0, 0);
             panelShadow.Name = "panelShadow";
-            panelShadow.Size = new Size(1240, 75);
+            panelShadow.Size = new Size(1240, 70);
             panelShadow.TabIndex = 0;
             // 
             // panelMenu
             // 
             panelMenu.BackColor = Color.White;
+            panelMenu.Controls.Add(panelMenuBtn);
             panelMenu.Controls.Add(labelMenu);
             panelMenu.Controls.Add(logoBox);
             panelMenu.Dock = DockStyle.Top;
             panelMenu.Location = new Point(0, 0);
             panelMenu.Name = "panelMenu";
-            panelMenu.Size = new Size(1240, 70);
+            panelMenu.Size = new Size(1240, 65);
             panelMenu.TabIndex = 1;
+            // 
+            // panelMenuBtn
+            // 
+            panelMenuBtn.Controls.Add(btnMinimize);
+            panelMenuBtn.Controls.Add(btnClose);
+            panelMenuBtn.Controls.Add(btnMaximize);
+            panelMenuBtn.Dock = DockStyle.Right;
+            panelMenuBtn.Location = new Point(1007, 0);
+            panelMenuBtn.Name = "panelMenuBtn";
+            panelMenuBtn.Size = new Size(233, 65);
+            panelMenuBtn.TabIndex = 2;
+            // 
+            // btnMinimize
+            // 
+            btnMinimize.FlatAppearance.BorderSize = 0;
+            btnMinimize.FlatStyle = FlatStyle.Flat;
+            btnMinimize.Image = (Image)resources.GetObject("btnMinimize.Image");
+            btnMinimize.Location = new Point(49, 22);
+            btnMinimize.Name = "btnMinimize";
+            btnMinimize.Size = new Size(25, 25);
+            btnMinimize.TabIndex = 3;
+            btnMinimize.UseVisualStyleBackColor = true;
+            btnMinimize.Click += btnMinimize_Click;
+            // 
+            // btnClose
+            // 
+            btnClose.FlatAppearance.BorderSize = 0;
+            btnClose.FlatStyle = FlatStyle.Flat;
+            btnClose.Image = (Image)resources.GetObject("btnClose.Image");
+            btnClose.Location = new Point(178, 22);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(25, 25);
+            btnClose.TabIndex = 2;
+            btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
+            // 
+            // btnMaximize
+            // 
+            btnMaximize.FlatAppearance.BorderSize = 0;
+            btnMaximize.FlatStyle = FlatStyle.Flat;
+            btnMaximize.Image = (Image)resources.GetObject("btnMaximize.Image");
+            btnMaximize.Location = new Point(119, 24);
+            btnMaximize.Name = "btnMaximize";
+            btnMaximize.Size = new Size(20, 20);
+            btnMaximize.TabIndex = 4;
+            btnMaximize.UseVisualStyleBackColor = true;
+            btnMaximize.Click += btnMaximize_Click;
             // 
             // labelMenu
             // 
             labelMenu.AutoSize = true;
             labelMenu.Font = new Font("Nirmala UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelMenu.Location = new Point(116, 23);
+            labelMenu.Location = new Point(94, 22);
             labelMenu.Name = "labelMenu";
             labelMenu.Size = new Size(145, 23);
             labelMenu.TabIndex = 1;
@@ -81,9 +135,9 @@
             // logoBox
             // 
             logoBox.Image = Properties.Resources.Logo;
-            logoBox.Location = new Point(47, 12);
+            logoBox.Location = new Point(32, 12);
             logoBox.Name = "logoBox";
-            logoBox.Size = new Size(45, 45);
+            logoBox.Size = new Size(40, 40);
             logoBox.SizeMode = PictureBoxSizeMode.Zoom;
             logoBox.TabIndex = 0;
             logoBox.TabStop = false;
@@ -91,17 +145,72 @@
             // panelSidebar
             // 
             panelSidebar.BackColor = Color.White;
-            panelSidebar.Controls.Add(panelNav);
             panelSidebar.Controls.Add(btnQuanlyDichVu);
-            panelSidebar.Controls.Add(btnDangxuat);
             panelSidebar.Controls.Add(btnQuanlyDienNuoc);
             panelSidebar.Controls.Add(btnQuanlyPhong);
+            panelSidebar.Controls.Add(panelNav);
+            panelSidebar.Controls.Add(btnDangxuat);
             panelSidebar.Controls.Add(btnDangkyLuuTru);
             panelSidebar.Controls.Add(btnQuanlyLuuTru);
-            panelSidebar.Location = new Point(30, 90);
+            panelSidebar.Dock = DockStyle.Left;
+            panelSidebar.Location = new Point(0, 70);
             panelSidebar.Name = "panelSidebar";
-            panelSidebar.Size = new Size(250, 610);
+            panelSidebar.Size = new Size(250, 650);
             panelSidebar.TabIndex = 1;
+            // 
+            // btnQuanlyDichVu
+            // 
+            btnQuanlyDichVu.BackColor = Color.White;
+            btnQuanlyDichVu.Dock = DockStyle.Top;
+            btnQuanlyDichVu.FlatAppearance.BorderSize = 0;
+            btnQuanlyDichVu.FlatStyle = FlatStyle.Flat;
+            btnQuanlyDichVu.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnQuanlyDichVu.ForeColor = Color.Black;
+            btnQuanlyDichVu.Location = new Point(0, 200);
+            btnQuanlyDichVu.Name = "btnQuanlyDichVu";
+            btnQuanlyDichVu.Size = new Size(250, 50);
+            btnQuanlyDichVu.TabIndex = 7;
+            btnQuanlyDichVu.Text = "Quản lý dịch vụ              ";
+            btnQuanlyDichVu.TextImageRelation = TextImageRelation.TextBeforeImage;
+            btnQuanlyDichVu.UseVisualStyleBackColor = false;
+            btnQuanlyDichVu.Visible = false;
+            btnQuanlyDichVu.Click += btnQuanlyDichVu_Click;
+            // 
+            // btnQuanlyDienNuoc
+            // 
+            btnQuanlyDienNuoc.BackColor = Color.White;
+            btnQuanlyDienNuoc.Dock = DockStyle.Top;
+            btnQuanlyDienNuoc.FlatAppearance.BorderSize = 0;
+            btnQuanlyDienNuoc.FlatStyle = FlatStyle.Flat;
+            btnQuanlyDienNuoc.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnQuanlyDienNuoc.ForeColor = Color.Black;
+            btnQuanlyDienNuoc.Location = new Point(0, 150);
+            btnQuanlyDienNuoc.Name = "btnQuanlyDienNuoc";
+            btnQuanlyDienNuoc.Size = new Size(250, 50);
+            btnQuanlyDienNuoc.TabIndex = 6;
+            btnQuanlyDienNuoc.Text = "Quản lý chỉ số điện/nước";
+            btnQuanlyDienNuoc.TextImageRelation = TextImageRelation.TextBeforeImage;
+            btnQuanlyDienNuoc.UseVisualStyleBackColor = false;
+            btnQuanlyDienNuoc.Visible = false;
+            btnQuanlyDienNuoc.Click += btnQuanlyDienNuoc_Click;
+            // 
+            // btnQuanlyPhong
+            // 
+            btnQuanlyPhong.BackColor = Color.White;
+            btnQuanlyPhong.Dock = DockStyle.Top;
+            btnQuanlyPhong.FlatAppearance.BorderSize = 0;
+            btnQuanlyPhong.FlatStyle = FlatStyle.Flat;
+            btnQuanlyPhong.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnQuanlyPhong.ForeColor = Color.Black;
+            btnQuanlyPhong.Location = new Point(0, 100);
+            btnQuanlyPhong.Name = "btnQuanlyPhong";
+            btnQuanlyPhong.Size = new Size(250, 50);
+            btnQuanlyPhong.TabIndex = 5;
+            btnQuanlyPhong.Text = "Quản lý phòng                ";
+            btnQuanlyPhong.TextImageRelation = TextImageRelation.TextBeforeImage;
+            btnQuanlyPhong.UseVisualStyleBackColor = false;
+            btnQuanlyPhong.Visible = false;
+            btnQuanlyPhong.Click += btnQuanlyPhong_Click;
             // 
             // panelNav
             // 
@@ -111,21 +220,6 @@
             panelNav.Size = new Size(3, 50);
             panelNav.TabIndex = 0;
             // 
-            // btnQuanlyDichVu
-            // 
-            btnQuanlyDichVu.Dock = DockStyle.Top;
-            btnQuanlyDichVu.FlatAppearance.BorderSize = 0;
-            btnQuanlyDichVu.FlatStyle = FlatStyle.Flat;
-            btnQuanlyDichVu.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnQuanlyDichVu.Location = new Point(0, 200);
-            btnQuanlyDichVu.Name = "btnQuanlyDichVu";
-            btnQuanlyDichVu.Size = new Size(250, 50);
-            btnQuanlyDichVu.TabIndex = 5;
-            btnQuanlyDichVu.Text = "Quản lý dịch vụ              ";
-            btnQuanlyDichVu.TextImageRelation = TextImageRelation.TextBeforeImage;
-            btnQuanlyDichVu.UseVisualStyleBackColor = true;
-            btnQuanlyDichVu.Click += btnQuanlyDichVu_Click;
-            // 
             // btnDangxuat
             // 
             btnDangxuat.BackColor = Color.FromArgb(176, 176, 176);
@@ -134,7 +228,7 @@
             btnDangxuat.FlatStyle = FlatStyle.Flat;
             btnDangxuat.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnDangxuat.Image = Properties.Resources.Logout;
-            btnDangxuat.Location = new Point(0, 560);
+            btnDangxuat.Location = new Point(0, 600);
             btnDangxuat.Name = "btnDangxuat";
             btnDangxuat.Size = new Size(250, 50);
             btnDangxuat.TabIndex = 4;
@@ -143,44 +237,14 @@
             btnDangxuat.UseVisualStyleBackColor = false;
             btnDangxuat.Click += btnDangxuat_Click;
             // 
-            // btnQuanlyDienNuoc
-            // 
-            btnQuanlyDienNuoc.Dock = DockStyle.Top;
-            btnQuanlyDienNuoc.FlatAppearance.BorderSize = 0;
-            btnQuanlyDienNuoc.FlatStyle = FlatStyle.Flat;
-            btnQuanlyDienNuoc.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnQuanlyDienNuoc.Location = new Point(0, 150);
-            btnQuanlyDienNuoc.Name = "btnQuanlyDienNuoc";
-            btnQuanlyDienNuoc.Size = new Size(250, 50);
-            btnQuanlyDienNuoc.TabIndex = 3;
-            btnQuanlyDienNuoc.Text = "Quản lý chỉ số điện/nước";
-            btnQuanlyDienNuoc.TextImageRelation = TextImageRelation.TextBeforeImage;
-            btnQuanlyDienNuoc.UseVisualStyleBackColor = true;
-            btnQuanlyDienNuoc.Click += btnQuanlyDienNuoc_Click;
-            // 
-            // btnQuanlyPhong
-            // 
-            btnQuanlyPhong.Dock = DockStyle.Top;
-            btnQuanlyPhong.FlatAppearance.BorderSize = 0;
-            btnQuanlyPhong.FlatStyle = FlatStyle.Flat;
-            btnQuanlyPhong.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnQuanlyPhong.Location = new Point(0, 100);
-            btnQuanlyPhong.Name = "btnQuanlyPhong";
-            btnQuanlyPhong.Size = new Size(250, 50);
-            btnQuanlyPhong.TabIndex = 2;
-            btnQuanlyPhong.Text = "Quản lý phòng               ";
-            btnQuanlyPhong.TextImageRelation = TextImageRelation.TextBeforeImage;
-            btnQuanlyPhong.UseVisualStyleBackColor = true;
-            btnQuanlyPhong.Click += btnQuanlyPhong_Click;
-            // 
             // btnDangkyLuuTru
             // 
-            btnDangkyLuuTru.BackColor = Color.FromArgb(50, 105, 232);
+            btnDangkyLuuTru.BackColor = Color.White;
             btnDangkyLuuTru.Dock = DockStyle.Top;
             btnDangkyLuuTru.FlatAppearance.BorderSize = 0;
             btnDangkyLuuTru.FlatStyle = FlatStyle.Flat;
             btnDangkyLuuTru.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnDangkyLuuTru.ForeColor = Color.White;
+            btnDangkyLuuTru.ForeColor = Color.Black;
             btnDangkyLuuTru.Location = new Point(0, 50);
             btnDangkyLuuTru.Name = "btnDangkyLuuTru";
             btnDangkyLuuTru.Size = new Size(250, 50);
@@ -210,9 +274,10 @@
             // panelContent
             // 
             panelContent.BackColor = Color.White;
-            panelContent.Location = new Point(311, 90);
+            panelContent.Dock = DockStyle.Fill;
+            panelContent.Location = new Point(250, 70);
             panelContent.Name = "panelContent";
-            panelContent.Size = new Size(905, 610);
+            panelContent.Size = new Size(990, 650);
             panelContent.TabIndex = 2;
             // 
             // MainMenuForm
@@ -223,13 +288,14 @@
             Controls.Add(panelContent);
             Controls.Add(panelSidebar);
             Controls.Add(panelShadow);
-            FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MainMenuForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "MainMenuForm";
             panelShadow.ResumeLayout(false);
             panelMenu.ResumeLayout(false);
             panelMenu.PerformLayout();
+            panelMenuBtn.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)logoBox).EndInit();
             panelSidebar.ResumeLayout(false);
             ResumeLayout(false);
@@ -244,11 +310,15 @@
         private Panel panelSidebar;
         private Button btnQuanlyLuuTru;
         private Panel panelContent;
-        private Button btnQuanlyDichVu;
         private Button btnDangxuat;
-        private Button btnQuanlyDienNuoc;
-        private Button btnQuanlyPhong;
         private Button btnDangkyLuuTru;
         private Panel panelNav;
+        private Button btnQuanlyDichVu;
+        private Button btnQuanlyDienNuoc;
+        private Button btnQuanlyPhong;
+        private Button btnClose;
+        private Button btnMaximize;
+        private Button btnMinimize;
+        private Panel panelMenuBtn;
     }
 }
