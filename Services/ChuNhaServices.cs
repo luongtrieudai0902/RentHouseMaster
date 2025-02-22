@@ -4,8 +4,9 @@ using Models.Entities;
 
 namespace Models.Services
 {
+    
     public class ChuNhaServices
-    {
+    {   
         public void TaoHopDong(ChuNha chuNha, HopDong hopDong)
         {
             chuNha.dsHopDong.Add(hopDong);
@@ -16,6 +17,7 @@ namespace Models.Services
             if (chuNha.dsHopDong == null || chuNha.dsHopDong.Count == 0)
             {
                 Console.WriteLine("Không có hợp đồng nào để xóa.");
+                return;
             }
 
             for (int i = chuNha.dsHopDong.Count - 1; i >= 0; i--)
@@ -47,11 +49,12 @@ namespace Models.Services
             }
         }
 
-        public void GiaHanHopDong(ChuNha chuNha, HopDong hopDong, string ngayGiaHan)
+        public void GiaHanHopDong(ChuNha chuNha, HopDong hopDong, DateTime ngayGiaHan)
         {
             if (chuNha.dsHopDong == null || chuNha.dsHopDong.Count == 0)
             {
                 Console.WriteLine("Không có hợp đồng nào để gia hạn.");
+                return;
             }
 
             for (int i = 0; i < chuNha.dsHopDong.Count; i++)
@@ -64,7 +67,7 @@ namespace Models.Services
             }
         }
 
-        public void CapNhatHopDong(HopDong hopDong, string ngayKT, double tienThue, string DieuKhoan)
+        public void CapNhatHopDong(HopDong hopDong, DateTime ngayKT, double tienThue, string DieuKhoan)
         {
             hopDong.NgayKetThuc = ngayKT;
             hopDong.TienThue = tienThue;
@@ -73,6 +76,8 @@ namespace Models.Services
                 hopDong.DieuKhoan = DieuKhoan;
             }
         }
+
+ 
 
         public void QuanLyTaiSan(ChuNha chuNha, TaiSan taiSan)
         {

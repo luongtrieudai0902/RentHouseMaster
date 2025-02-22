@@ -1,4 +1,6 @@
-using LearningWinform.Forms;
+﻿using LearningWinform.Forms;
+using System;
+using System.Windows.Forms;
 
 namespace RentHouseMaster.Forms
 {
