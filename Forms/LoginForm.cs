@@ -2,6 +2,7 @@
 using System.Data;
 using Microsoft.Data.SqlClient;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace RentHouseMaster.Forms
 {
@@ -12,33 +13,45 @@ namespace RentHouseMaster.Forms
             InitializeComponent();
         }
 
-        // Chuỗi kết nối đến cơ sở dữ liệu
-        string connectionString = "Server=DESKTOP-72SMDCU\\ANHHAO;Database=UserInfo;Integrated Security=True;";
+        string connectionString = "Server=DESKTOP-72SMDCU\\ANHHAO;Database=UserInfo;Integrated Security=True;TrustServerCertificate=True;";
+
+        SqlConnection sqlConnection = null;
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            string username = txtSdtEmail.Text;  // Tên đăng nhập (email/SDT)
-            string password = txtMatKhau.Text;  // Mật khẩu
-
-            if (KiemTraDangNhap(username, password))
+            try
             {
-                // Mở form Sidebar nếu đăng nhập thành công
-                MainMenuForm menuForm = new MainMenuForm();
-                menuForm.Show();
+                sqlConnection = new SqlConnection(connectionString);
+                sqlConnection.Open();
 
-                // Đóng form đăng nhập
-                this.Close();  // Thay vì Hide, dùng Close để đóng form login
+                string username = txtSdtEmail.Text;
+                string password = txtMatKhau.Text;
+
+                if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+                    return;
+                }
+
+                if (!KiemTraDangNhap(username, password))
+                {
+                    MessageBox.Show("Số điện thoại hoặc mật khẩu không đúng!");
+                    return;
+                }
+
+                MessageBox.Show("Đăng nhập thành công!");
+                this.Hide();
+                MainMenuForm mainMenuForm = new MainMenuForm();
+                mainMenuForm.Show();
             }
-            else
+            catch (Exception ex)
             {
-                // Nếu tên đăng nhập hoặc mật khẩu không đúng
-                MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng.");
+                MessageBox.Show("Lỗi kết nối: " + ex.Message);
             }
         }
 
         private bool KiemTraDangNhap(string username, string password)
         {
-            // Kết nối đến cơ sở dữ liệu
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
@@ -46,12 +59,11 @@ namespace RentHouseMaster.Forms
                     string query = "SELECT COUNT(*) FROM userList WHERE phoneOrEmail = @Username AND uPassWord = @Password";
                     SqlCommand cmd = new SqlCommand(query, connection);
                     cmd.Parameters.AddWithValue("@Username", username);
-                    cmd.Parameters.AddWithValue("@Password", password); // Đảm bảo mật khẩu là đúng
+                    cmd.Parameters.AddWithValue("@Password", password);
 
                     connection.Open();
                     int userCount = (int)cmd.ExecuteScalar();
 
-                    // Kiểm tra xem có đúng một tài khoản trùng khớp không
                     return userCount > 0;
                 }
                 catch (Exception ex)
@@ -65,10 +77,9 @@ namespace RentHouseMaster.Forms
 
         private void linkLbQuenMK_Click(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            // Mở form Quên mật khẩu
             this.Hide();
-            ForgotPassword forgotPasswordForm = new ForgotPassword();
-            forgotPasswordForm.Show();
+            SendCodeForm sendCodeForm = new SendCodeForm();
+            sendCodeForm.Show();
         }
 
         private void linkLbDangKy_Click(object sender, LinkLabelLinkClickedEventArgs e)

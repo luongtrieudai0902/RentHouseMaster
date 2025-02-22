@@ -35,14 +35,18 @@ namespace RentHouseMaster.Forms
                 return;
             }
 
-            // Kiểm tra thông tin người dùng trong cơ sở dữ liệu
-
-
             // Nếu thông tin hợp lệ, chuyển sang form LoginForm
             MessageBox.Show("Đăng nhập thành công!");
             this.Hide();
             var lgForm = new LoginForm();
             lgForm.Show();
+        }
+
+        private void llblMXT_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            SendCodeForm sendCodeForm = new SendCodeForm();
+            sendCodeForm.Show();
         }
     }
 }
