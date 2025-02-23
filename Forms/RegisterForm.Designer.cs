@@ -35,7 +35,7 @@
             label2 = new Label();
             txtHovaTen = new TextBox();
             label3 = new Label();
-            txtSDTOrEmail = new TextBox();
+            txtSDTEmail = new TextBox();
             label4 = new Label();
             txtMatKhau = new TextBox();
             button1 = new Button();
@@ -75,11 +75,11 @@
             // txtHovaTen
             // 
             txtHovaTen.BorderStyle = BorderStyle.FixedSingle;
-            txtHovaTen.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtHovaTen.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtHovaTen.Location = new Point(60, 173);
-            txtHovaTen.Multiline = true;
             txtHovaTen.Name = "txtHovaTen";
-            txtHovaTen.Size = new Size(509, 60);
+            txtHovaTen.PlaceholderText = " Nguyễn Văn A";
+            txtHovaTen.Size = new Size(509, 50);
             txtHovaTen.TabIndex = 3;
             // 
             // label3
@@ -92,15 +92,15 @@
             label3.TabIndex = 4;
             label3.Text = "SĐT/Email";
             // 
-            // txtSDTOrEmail
+            // txtSDTEmail
             // 
-            txtSDTOrEmail.BorderStyle = BorderStyle.FixedSingle;
-            txtSDTOrEmail.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtSDTOrEmail.Location = new Point(60, 323);
-            txtSDTOrEmail.Multiline = true;
-            txtSDTOrEmail.Name = "txtSDTOrEmail";
-            txtSDTOrEmail.Size = new Size(509, 60);
-            txtSDTOrEmail.TabIndex = 5;
+            txtSDTEmail.BorderStyle = BorderStyle.FixedSingle;
+            txtSDTEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtSDTEmail.Location = new Point(60, 323);
+            txtSDTEmail.Name = "txtSDTEmail";
+            txtSDTEmail.PlaceholderText = " nguyenvana@gmail.com";
+            txtSDTEmail.Size = new Size(509, 50);
+            txtSDTEmail.TabIndex = 5;
             // 
             // label4
             // 
@@ -115,12 +115,12 @@
             // txtMatKhau
             // 
             txtMatKhau.BorderStyle = BorderStyle.FixedSingle;
-            txtMatKhau.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtMatKhau.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtMatKhau.Location = new Point(60, 466);
-            txtMatKhau.Multiline = true;
             txtMatKhau.Name = "txtMatKhau";
             txtMatKhau.PasswordChar = '*';
-            txtMatKhau.Size = new Size(509, 60);
+            txtMatKhau.PlaceholderText = " ******";
+            txtMatKhau.Size = new Size(509, 50);
             txtMatKhau.TabIndex = 7;
             // 
             // button1
@@ -129,7 +129,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(210, 576);
+            button1.Location = new Point(210, 558);
             button1.Name = "button1";
             button1.Size = new Size(155, 49);
             button1.TabIndex = 8;
@@ -159,7 +159,7 @@
             Controls.Add(button1);
             Controls.Add(txtMatKhau);
             Controls.Add(label4);
-            Controls.Add(txtSDTOrEmail);
+            Controls.Add(txtSDTEmail);
             Controls.Add(label3);
             Controls.Add(txtHovaTen);
             Controls.Add(label2);
@@ -182,7 +182,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtHovaTen;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtSDTOrEmail;
+        private System.Windows.Forms.TextBox txtSDTEmail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtMatKhau;
         private System.Windows.Forms.Button button1;
