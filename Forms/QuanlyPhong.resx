@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -117,17 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnAddPhong.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAVtJREFUSEvdlO1xwkAMRF0CHYQSKIUS6CB0kHQAnSQdUAIlUEJKcPb5VmfCfRiS
+        yR/ejGbslWTpfHcanptxHFeyvexDdpEFZxnazqGPo+St7Eu2BIUfK6SEw5SaOMlYxdpu/BvZTna9qje7
+        +xCY4qfu95abEONYOFiuowC6AhI2ljPS6Pji1wyxzoGt5RI5Y8nVzu0b/foDyawEKLSyPCMxui86DOyv
+        FgC52C8oG5TIsYPmibC/VyBW8WlpRiJnG4p/H9jfK7BOEZW/YEdO1uP1EVwif9DvZRPW/7VAfPDFUoH9
+        vV/EcYWzpRmJscnNy2V/r0CcxOomxwk4WSqwv1cg/kJ5EiUyOeM2/uaivSZv+x4RxASFv4yK/mRVwDHF
+        TQn3DDs6j4+/W+5DYIqfoGs2L69Iz1wo9ixGAxztvg8l3M77FnTfnqBLKJlCHOEYJUBhNFZRTs4nYhi+
+        AQ0S8PIuO9s1AAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="Dropdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dropdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnQL.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAKpJREFUSEvtk9ENgzAQQzMCIzAKmzBCO0I3aTdhhI7ACB0hfQZX4geStPmAiidZ
+        iDvLBzkIJ/smxtiii2/r4vARiavLdSBwGa5r69bvKMyh4rjhuTzRHaUfRCZUOuDDC6U/BExFR0S/Qw+Z
+        Te/WOpiK94DnNrnnN2lcXgfTN0OGyc0wl7bBuBySPF88Oi4xupQGs4Zk/cX4GqULl+rj/GMP0M7yd3Dy
+        D4TwBvryboKrpaicAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="threeDotsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\threeDotsIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAR1JREFUSEvtU1sRwjAQjAQkIKEffX1GAhJwQB2AA+oAJOCgEpBQCZUAu5nNNO0U
+        JoXyA+zMTZO9u71ecjHfgSzLtnmeH5Y0akremKIobp8wyRtTluXiHVBT8r8Ia+3KD0aaphXWiVzvA5e3
+        g3A3vlDYCee+Vthr4F8Hgo0u9Ix1K65ldwrv8ewd+L9KkmTlhci7RIExj3wOdDwyn4DvRlzjkkZAESt/
+        K6oHZ5ZCU+Y74DosOAUV6B/YHCCxkkAtagAdE/2dqHkIjqDzXYUAt5f/Imo+kNxIpMX8W3KcGuyP4m9T
+        xaOhY/AjOWm4o73CXweEKghdJchHx85q7sUNi8S8gxgg1k2arBId9w5iERYR5chFOvCgHk3bP57BmDsR
+        hQwLTGT7mAAAAABJRU5ErkJggg==
+</value>
   </data>
 </root>

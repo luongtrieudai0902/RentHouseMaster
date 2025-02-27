@@ -18,8 +18,50 @@ namespace RentHouseMaster.Forms
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None; // Remove window border
+            this.AutoSize = true;
+        }
+
+        //quan ly luu tru button click event (main button)
+        private void btnQuanlyLuuTru_Click(object sender, EventArgs e)
+        {
+            panelNav.Height = btnQuanlyLuuTru.Height;
+            panelNav.Top = btnQuanlyLuuTru.Top;
+            panelNav.Left = btnQuanlyLuuTru.Left;
+            btnDangkyLuuTru.Visible = !btnDangkyLuuTru.Visible;
+            btnQuanlyPhong.Visible = !btnQuanlyPhong.Visible;
+            btnQuanlyDienNuoc.Visible = !btnQuanlyDienNuoc.Visible;
+            btnQuanlyDichVu.Visible = !btnQuanlyDichVu.Visible;
+        }
+
+        //all the menu buttons under the quan ly luu tru buttons
+        private void btnDangkyLuuTru_Click(object sender, EventArgs e)
+        {
+            btn_Hover((Button)sender);
+        }
+
+        private void btnQuanlyPhong_Click(object sender, EventArgs e)
+        {
+            btn_Hover((Button)sender);
+            OpenChildForm(new QuanlyPhong());
+        }
+
+        private void btnQuanlyDienNuoc_Click(object sender, EventArgs e)
+        {
+            btn_Hover((Button)sender);
+        }
+
+        private void btnQuanlyDichVu_Click(object sender, EventArgs e)
+        {
+            btn_Hover((Button)sender);
+        }
+
+        //logout button click event
+        private void btnDangxuat_Click(object sender, EventArgs e)
+        {
 
         }
+
+        //all methods for contorlling buttons and forms are here!!!
 
         //close the app
         private void btnClose_Click(object sender, EventArgs e)
@@ -54,6 +96,7 @@ namespace RentHouseMaster.Forms
             clickedBtn.ForeColor = Color.White;
         }
 
+
         // Reset all buttons to default color
         private void ResetButtonColors()
         {
@@ -70,46 +113,7 @@ namespace RentHouseMaster.Forms
             btnQuanlyDichVu.ForeColor = Color.Black;
         }
 
-
-        //quan ly luu tru button click event (main button)
-        private void btnQuanlyLuuTru_Click(object sender, EventArgs e)
-        {
-            panelNav.Height = btnQuanlyLuuTru.Height;
-            panelNav.Top = btnQuanlyLuuTru.Top;
-            panelNav.Left = btnQuanlyLuuTru.Left;
-            btnDangkyLuuTru.Visible = !btnDangkyLuuTru.Visible;
-            btnQuanlyPhong.Visible = !btnQuanlyPhong.Visible;
-            btnQuanlyDienNuoc.Visible = !btnQuanlyDienNuoc.Visible;
-            btnQuanlyDichVu.Visible = !btnQuanlyDichVu.Visible;
-        }
-
-        //all the menu buttons under the quan ly luu tru buttons
-        private void btnDangkyLuuTru_Click(object sender, EventArgs e)
-        {
-            btn_Hover((Button)sender);
-        }
-
-        private void btnQuanlyPhong_Click(object sender, EventArgs e)
-        {
-            btn_Hover((Button)sender);
-        }
-
-        private void btnQuanlyDienNuoc_Click(object sender, EventArgs e)
-        {
-            btn_Hover((Button)sender);
-        }
-
-        private void btnQuanlyDichVu_Click(object sender, EventArgs e)
-        {
-            btn_Hover((Button)sender);
-        }
-
-        //logout button click event
-        private void btnDangxuat_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        //for movable form
         private void mouse_Down(object sender, MouseEventArgs e)
         {
             MouseLocation = new Point(-e.X, -e.Y);
@@ -123,6 +127,25 @@ namespace RentHouseMaster.Forms
                 newMousePoint.Offset(MouseLocation.X, MouseLocation.Y);
                 Location = newMousePoint;
             }
+        }
+
+        //for opening child form
+        private Form formHienTai = null;
+        private void OpenChildForm(Form formmoi)
+        {
+            if (formHienTai != null)
+            {
+                formHienTai.Close();  // Close the previous form
+            }
+
+            formHienTai = formmoi;
+            formmoi.TopLevel = false;
+            formmoi.FormBorderStyle = FormBorderStyle.None;
+            formmoi.Dock = DockStyle.Fill;
+            panelContent.Controls.Clear();
+            panelContent.Controls.Add(formmoi);
+            formmoi.BringToFront();
+            formmoi.Show();
         }
     }
 }

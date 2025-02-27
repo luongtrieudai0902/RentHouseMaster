@@ -60,7 +60,7 @@
             panelShadow.Dock = DockStyle.Top;
             panelShadow.Location = new Point(0, 0);
             panelShadow.Name = "panelShadow";
-            panelShadow.Size = new Size(1240, 70);
+            panelShadow.Size = new Size(1222, 70);
             panelShadow.TabIndex = 0;
             // 
             // panelMenu
@@ -72,7 +72,7 @@
             panelMenu.Dock = DockStyle.Top;
             panelMenu.Location = new Point(0, 0);
             panelMenu.Name = "panelMenu";
-            panelMenu.Size = new Size(1240, 65);
+            panelMenu.Size = new Size(1222, 65);
             panelMenu.TabIndex = 1;
             panelMenu.MouseDown += mouse_Down;
             panelMenu.MouseMove += mouse_Move;
@@ -83,7 +83,7 @@
             panelMenuBtn.Controls.Add(btnClose);
             panelMenuBtn.Controls.Add(btnMaximize);
             panelMenuBtn.Dock = DockStyle.Right;
-            panelMenuBtn.Location = new Point(1007, 0);
+            panelMenuBtn.Location = new Point(989, 0);
             panelMenuBtn.Name = "panelMenuBtn";
             panelMenuBtn.Size = new Size(233, 65);
             panelMenuBtn.TabIndex = 2;
@@ -279,20 +279,19 @@
             panelContent.Dock = DockStyle.Fill;
             panelContent.Location = new Point(250, 70);
             panelContent.Name = "panelContent";
-            panelContent.Size = new Size(990, 650);
+            panelContent.Size = new Size(972, 650);
             panelContent.TabIndex = 2;
             // 
             // MainMenuForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1240, 720);
+            ClientSize = new Size(1222, 720);
             Controls.Add(panelContent);
             Controls.Add(panelSidebar);
             Controls.Add(panelShadow);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MainMenuForm";
-            StartPosition = FormStartPosition.CenterScreen;
             Text = "MainMenuForm";
             panelShadow.ResumeLayout(false);
             panelMenu.ResumeLayout(false);
