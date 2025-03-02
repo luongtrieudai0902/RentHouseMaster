@@ -92,6 +92,7 @@ namespace RentHouseMaster.Forms
         private void btnQuanlyPhong_Click(object sender, EventArgs e)
         {
             btn_Hover((Button)sender);
+            OpenChildForm(new QuanlyPhongForm());
         }
 
         private void btnQuanlyDienNuoc_Click(object sender, EventArgs e)
@@ -123,6 +124,25 @@ namespace RentHouseMaster.Forms
                 newMousePoint.Offset(MouseLocation.X, MouseLocation.Y);
                 Location = newMousePoint;
             }
+        }
+
+        //for opening child form
+        private Form formHienTai = null;
+        private void OpenChildForm(Form formmoi)
+        {
+            if (formHienTai != null)
+            {
+                formHienTai.Close();  // Close the previous form
+            }
+
+            formHienTai = formmoi;
+            formmoi.TopLevel = false;
+            formmoi.FormBorderStyle = FormBorderStyle.None;
+            formmoi.Dock = DockStyle.Fill;
+            panelContent.Controls.Clear();
+            panelContent.Controls.Add(formmoi);
+            formmoi.BringToFront();
+            formmoi.Show();
         }
     }
 }
