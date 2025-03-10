@@ -10,6 +10,9 @@
     <Compile Update="Forms\MainMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\QuanLyDichVuKhac.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\QuanlyPhongForm.cs">
       <SubType>Form</SubType>
     </Compile>

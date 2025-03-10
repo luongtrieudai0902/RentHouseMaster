@@ -26,8 +26,8 @@ namespace RentHouseMaster.Forms
 
         private void btn_Tieptuc(object sender, EventArgs e)
         {
-            string phoneOrEmail = txtPhoneOrEmail.Text;
-            string validCode = txtValidCode.Text;
+            string phoneOrEmail = txtSDTEmail.Text;
+            string validCode = txtMaXacThuc.Text;
             // Kiểm tra thông tin người dùng nhập vào
             if (string.IsNullOrEmpty(phoneOrEmail) || string.IsNullOrEmpty(validCode))
             {
@@ -47,6 +47,19 @@ namespace RentHouseMaster.Forms
             this.Hide();
             SendCodeForm sendCodeForm = new SendCodeForm();
             sendCodeForm.Show();
+        }
+
+        private void ForgotPassword_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Bạn có muốn thoát chương trình không?", "Thoát chương trình", MessageBoxButtons.YesNo);
+            if (dialog == DialogResult.Yes)
+            {
+                Environment.Exit(0);
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

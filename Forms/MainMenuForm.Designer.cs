@@ -59,8 +59,9 @@
             panelShadow.Controls.Add(panelMenu);
             panelShadow.Dock = DockStyle.Top;
             panelShadow.Location = new Point(0, 0);
+            panelShadow.Margin = new Padding(5, 5, 5, 5);
             panelShadow.Name = "panelShadow";
-            panelShadow.Size = new Size(1240, 70);
+            panelShadow.Size = new Size(2015, 112);
             panelShadow.TabIndex = 0;
             // 
             // panelMenu
@@ -71,8 +72,9 @@
             panelMenu.Controls.Add(logoBox);
             panelMenu.Dock = DockStyle.Top;
             panelMenu.Location = new Point(0, 0);
+            panelMenu.Margin = new Padding(5, 5, 5, 5);
             panelMenu.Name = "panelMenu";
-            panelMenu.Size = new Size(1240, 65);
+            panelMenu.Size = new Size(2015, 104);
             panelMenu.TabIndex = 1;
             panelMenu.MouseDown += mouse_Down;
             panelMenu.MouseMove += mouse_Move;
@@ -83,9 +85,10 @@
             panelMenuBtn.Controls.Add(btnClose);
             panelMenuBtn.Controls.Add(btnMaximize);
             panelMenuBtn.Dock = DockStyle.Right;
-            panelMenuBtn.Location = new Point(1007, 0);
+            panelMenuBtn.Location = new Point(1636, 0);
+            panelMenuBtn.Margin = new Padding(5, 5, 5, 5);
             panelMenuBtn.Name = "panelMenuBtn";
-            panelMenuBtn.Size = new Size(233, 65);
+            panelMenuBtn.Size = new Size(379, 104);
             panelMenuBtn.TabIndex = 2;
             // 
             // btnMinimize
@@ -93,9 +96,10 @@
             btnMinimize.FlatAppearance.BorderSize = 0;
             btnMinimize.FlatStyle = FlatStyle.Flat;
             btnMinimize.Image = (Image)resources.GetObject("btnMinimize.Image");
-            btnMinimize.Location = new Point(49, 22);
+            btnMinimize.Location = new Point(80, 35);
+            btnMinimize.Margin = new Padding(5, 5, 5, 5);
             btnMinimize.Name = "btnMinimize";
-            btnMinimize.Size = new Size(25, 25);
+            btnMinimize.Size = new Size(41, 40);
             btnMinimize.TabIndex = 3;
             btnMinimize.UseVisualStyleBackColor = true;
             btnMinimize.Click += btnMinimize_Click;
@@ -105,9 +109,10 @@
             btnClose.FlatAppearance.BorderSize = 0;
             btnClose.FlatStyle = FlatStyle.Flat;
             btnClose.Image = (Image)resources.GetObject("btnClose.Image");
-            btnClose.Location = new Point(178, 22);
+            btnClose.Location = new Point(289, 35);
+            btnClose.Margin = new Padding(5, 5, 5, 5);
             btnClose.Name = "btnClose";
-            btnClose.Size = new Size(25, 25);
+            btnClose.Size = new Size(41, 40);
             btnClose.TabIndex = 2;
             btnClose.UseVisualStyleBackColor = true;
             btnClose.Click += btnClose_Click;
@@ -117,9 +122,10 @@
             btnMaximize.FlatAppearance.BorderSize = 0;
             btnMaximize.FlatStyle = FlatStyle.Flat;
             btnMaximize.Image = (Image)resources.GetObject("btnMaximize.Image");
-            btnMaximize.Location = new Point(119, 24);
+            btnMaximize.Location = new Point(193, 38);
+            btnMaximize.Margin = new Padding(5, 5, 5, 5);
             btnMaximize.Name = "btnMaximize";
-            btnMaximize.Size = new Size(20, 20);
+            btnMaximize.Size = new Size(32, 32);
             btnMaximize.TabIndex = 4;
             btnMaximize.UseVisualStyleBackColor = true;
             btnMaximize.Click += btnMaximize_Click;
@@ -128,18 +134,20 @@
             // 
             labelMenu.AutoSize = true;
             labelMenu.Font = new Font("Nirmala UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelMenu.Location = new Point(94, 22);
+            labelMenu.Location = new Point(153, 35);
+            labelMenu.Margin = new Padding(5, 0, 5, 0);
             labelMenu.Name = "labelMenu";
-            labelMenu.Size = new Size(145, 23);
+            labelMenu.Size = new Size(237, 38);
             labelMenu.TabIndex = 1;
             labelMenu.Text = "RentHouseMaster";
             // 
             // logoBox
             // 
             logoBox.Image = Properties.Resources.Logo;
-            logoBox.Location = new Point(32, 12);
+            logoBox.Location = new Point(52, 19);
+            logoBox.Margin = new Padding(5, 5, 5, 5);
             logoBox.Name = "logoBox";
-            logoBox.Size = new Size(40, 40);
+            logoBox.Size = new Size(65, 64);
             logoBox.SizeMode = PictureBoxSizeMode.Zoom;
             logoBox.TabIndex = 0;
             logoBox.TabStop = false;
@@ -155,9 +163,10 @@
             panelSidebar.Controls.Add(btnDangkyLuuTru);
             panelSidebar.Controls.Add(btnQuanlyLuuTru);
             panelSidebar.Dock = DockStyle.Left;
-            panelSidebar.Location = new Point(0, 70);
+            panelSidebar.Location = new Point(0, 112);
+            panelSidebar.Margin = new Padding(5, 5, 5, 5);
             panelSidebar.Name = "panelSidebar";
-            panelSidebar.Size = new Size(250, 650);
+            panelSidebar.Size = new Size(406, 1040);
             panelSidebar.TabIndex = 1;
             // 
             // btnQuanlyDichVu
@@ -168,9 +177,10 @@
             btnQuanlyDichVu.FlatStyle = FlatStyle.Flat;
             btnQuanlyDichVu.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnQuanlyDichVu.ForeColor = Color.Black;
-            btnQuanlyDichVu.Location = new Point(0, 200);
+            btnQuanlyDichVu.Location = new Point(0, 320);
+            btnQuanlyDichVu.Margin = new Padding(5, 5, 5, 5);
             btnQuanlyDichVu.Name = "btnQuanlyDichVu";
-            btnQuanlyDichVu.Size = new Size(250, 50);
+            btnQuanlyDichVu.Size = new Size(406, 80);
             btnQuanlyDichVu.TabIndex = 7;
             btnQuanlyDichVu.Text = "Quản lý dịch vụ              ";
             btnQuanlyDichVu.TextImageRelation = TextImageRelation.TextBeforeImage;
@@ -186,9 +196,10 @@
             btnQuanlyDienNuoc.FlatStyle = FlatStyle.Flat;
             btnQuanlyDienNuoc.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnQuanlyDienNuoc.ForeColor = Color.Black;
-            btnQuanlyDienNuoc.Location = new Point(0, 150);
+            btnQuanlyDienNuoc.Location = new Point(0, 240);
+            btnQuanlyDienNuoc.Margin = new Padding(5, 5, 5, 5);
             btnQuanlyDienNuoc.Name = "btnQuanlyDienNuoc";
-            btnQuanlyDienNuoc.Size = new Size(250, 50);
+            btnQuanlyDienNuoc.Size = new Size(406, 80);
             btnQuanlyDienNuoc.TabIndex = 6;
             btnQuanlyDienNuoc.Text = "Quản lý chỉ số điện/nước";
             btnQuanlyDienNuoc.TextImageRelation = TextImageRelation.TextBeforeImage;
@@ -204,9 +215,10 @@
             btnQuanlyPhong.FlatStyle = FlatStyle.Flat;
             btnQuanlyPhong.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnQuanlyPhong.ForeColor = Color.Black;
-            btnQuanlyPhong.Location = new Point(0, 100);
+            btnQuanlyPhong.Location = new Point(0, 160);
+            btnQuanlyPhong.Margin = new Padding(5, 5, 5, 5);
             btnQuanlyPhong.Name = "btnQuanlyPhong";
-            btnQuanlyPhong.Size = new Size(250, 50);
+            btnQuanlyPhong.Size = new Size(406, 80);
             btnQuanlyPhong.TabIndex = 5;
             btnQuanlyPhong.Text = "Quản lý phòng                ";
             btnQuanlyPhong.TextImageRelation = TextImageRelation.TextBeforeImage;
@@ -218,8 +230,9 @@
             // 
             panelNav.BackColor = Color.FromArgb(50, 105, 232);
             panelNav.Location = new Point(0, 0);
+            panelNav.Margin = new Padding(5, 5, 5, 5);
             panelNav.Name = "panelNav";
-            panelNav.Size = new Size(3, 50);
+            panelNav.Size = new Size(5, 80);
             panelNav.TabIndex = 0;
             // 
             // btnDangxuat
@@ -230,9 +243,10 @@
             btnDangxuat.FlatStyle = FlatStyle.Flat;
             btnDangxuat.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnDangxuat.Image = Properties.Resources.Logout;
-            btnDangxuat.Location = new Point(0, 600);
+            btnDangxuat.Location = new Point(0, 960);
+            btnDangxuat.Margin = new Padding(5, 5, 5, 5);
             btnDangxuat.Name = "btnDangxuat";
-            btnDangxuat.Size = new Size(250, 50);
+            btnDangxuat.Size = new Size(406, 80);
             btnDangxuat.TabIndex = 4;
             btnDangxuat.Text = "Đăng xuất";
             btnDangxuat.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -247,9 +261,10 @@
             btnDangkyLuuTru.FlatStyle = FlatStyle.Flat;
             btnDangkyLuuTru.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnDangkyLuuTru.ForeColor = Color.Black;
-            btnDangkyLuuTru.Location = new Point(0, 50);
+            btnDangkyLuuTru.Location = new Point(0, 80);
+            btnDangkyLuuTru.Margin = new Padding(5, 5, 5, 5);
             btnDangkyLuuTru.Name = "btnDangkyLuuTru";
-            btnDangkyLuuTru.Size = new Size(250, 50);
+            btnDangkyLuuTru.Size = new Size(406, 80);
             btnDangkyLuuTru.TabIndex = 1;
             btnDangkyLuuTru.Text = "Đăng ký lưu trú              ";
             btnDangkyLuuTru.TextImageRelation = TextImageRelation.TextBeforeImage;
@@ -265,8 +280,9 @@
             btnQuanlyLuuTru.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnQuanlyLuuTru.Image = Properties.Resources.Dropdown;
             btnQuanlyLuuTru.Location = new Point(0, 0);
+            btnQuanlyLuuTru.Margin = new Padding(5, 5, 5, 5);
             btnQuanlyLuuTru.Name = "btnQuanlyLuuTru";
-            btnQuanlyLuuTru.Size = new Size(250, 50);
+            btnQuanlyLuuTru.Size = new Size(406, 80);
             btnQuanlyLuuTru.TabIndex = 0;
             btnQuanlyLuuTru.Text = "Quản lý lưu trú";
             btnQuanlyLuuTru.TextImageRelation = TextImageRelation.TextBeforeImage;
@@ -277,20 +293,22 @@
             // 
             panelContent.BackColor = Color.White;
             panelContent.Dock = DockStyle.Fill;
-            panelContent.Location = new Point(250, 70);
+            panelContent.Location = new Point(406, 112);
+            panelContent.Margin = new Padding(5, 5, 5, 5);
             panelContent.Name = "panelContent";
-            panelContent.Size = new Size(990, 650);
+            panelContent.Size = new Size(1609, 1040);
             panelContent.TabIndex = 2;
             // 
             // MainMenuForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1240, 720);
+            ClientSize = new Size(2015, 1152);
             Controls.Add(panelContent);
             Controls.Add(panelSidebar);
             Controls.Add(panelShadow);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(5, 5, 5, 5);
             Name = "MainMenuForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "MainMenuForm";
