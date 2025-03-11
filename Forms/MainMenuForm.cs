@@ -103,12 +103,15 @@ namespace RentHouseMaster.Forms
         private void btnQuanlyDichVu_Click(object sender, EventArgs e)
         {
             btn_Hover((Button)sender);
+            OpenChildForm(new QuanLyDichVuKhac());
         }
 
         //logout button click event
         private void btnDangxuat_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
         }
 
         private void mouse_Down(object sender, MouseEventArgs e)

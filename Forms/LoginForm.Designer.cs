@@ -33,20 +33,20 @@ namespace RentHouseMaster.Forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             picLogo = new PictureBox();
             lbName = new Label();
-            lbSdtEmail = new Label();
+            lblSdtEmail = new Label();
             txtSdtEmail = new TextBox();
-            lbMatKhau = new Label();
+            lblMatKhau = new Label();
             txtMatKhau = new TextBox();
             btnDangNhap = new Button();
-            linkLbQuenMK = new LinkLabel();
-            linkLbDangKy = new LinkLabel();
+            lnkQuenMK = new LinkLabel();
+            lnkDangKy = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
             SuspendLayout();
             // 
             // picLogo
             // 
             picLogo.Image = (Image)resources.GetObject("picLogo.Image");
-            picLogo.Location = new Point(338, 77);
+            picLogo.Location = new Point(354, 48);
             picLogo.Margin = new Padding(4, 5, 4, 5);
             picLogo.Name = "picLogo";
             picLogo.Size = new Size(82, 104);
@@ -58,30 +58,30 @@ namespace RentHouseMaster.Forms
             // 
             lbName.AutoSize = true;
             lbName.Font = new Font("Segoe UI", 7.875F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbName.Location = new Point(284, 184);
+            lbName.Location = new Point(309, 166);
             lbName.Margin = new Padding(4, 0, 4, 0);
             lbName.Name = "lbName";
             lbName.Size = new Size(178, 30);
             lbName.TabIndex = 1;
             lbName.Text = "RentHouseMaster";
             // 
-            // lbSdtEmail
+            // lblSdtEmail
             // 
-            lbSdtEmail.AutoSize = true;
-            lbSdtEmail.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbSdtEmail.Location = new Point(125, 236);
-            lbSdtEmail.Margin = new Padding(6, 0, 6, 0);
-            lbSdtEmail.Name = "lbSdtEmail";
-            lbSdtEmail.Size = new Size(150, 37);
-            lbSdtEmail.TabIndex = 2;
-            lbSdtEmail.Text = "SĐT/Email";
+            lblSdtEmail.AutoSize = true;
+            lblSdtEmail.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblSdtEmail.Location = new Point(125, 238);
+            lblSdtEmail.Margin = new Padding(6, 0, 6, 0);
+            lblSdtEmail.Name = "lblSdtEmail";
+            lblSdtEmail.Size = new Size(150, 37);
+            lblSdtEmail.TabIndex = 2;
+            lblSdtEmail.Text = "SĐT/Email";
             // 
             // txtSdtEmail
             // 
             txtSdtEmail.Anchor = AnchorStyles.Left;
             txtSdtEmail.BorderStyle = BorderStyle.FixedSingle;
             txtSdtEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            txtSdtEmail.Location = new Point(125, 287);
+            txtSdtEmail.Location = new Point(125, 286);
             txtSdtEmail.Margin = new Padding(0);
             txtSdtEmail.Name = "txtSdtEmail";
             txtSdtEmail.PlaceholderText = " vd@gmail.com";
@@ -89,15 +89,15 @@ namespace RentHouseMaster.Forms
             txtSdtEmail.TabIndex = 3;
             txtSdtEmail.Tag = "";
             // 
-            // lbMatKhau
+            // lblMatKhau
             // 
-            lbMatKhau.AutoSize = true;
-            lbMatKhau.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbMatKhau.Location = new Point(125, 403);
-            lbMatKhau.Name = "lbMatKhau";
-            lbMatKhau.Size = new Size(138, 37);
-            lbMatKhau.TabIndex = 4;
-            lbMatKhau.Text = "Mật khẩu";
+            lblMatKhau.AutoSize = true;
+            lblMatKhau.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblMatKhau.Location = new Point(125, 399);
+            lblMatKhau.Name = "lblMatKhau";
+            lblMatKhau.Size = new Size(138, 37);
+            lblMatKhau.TabIndex = 4;
+            lblMatKhau.Text = "Mật khẩu";
             // 
             // txtMatKhau
             // 
@@ -105,7 +105,7 @@ namespace RentHouseMaster.Forms
             txtMatKhau.BackColor = SystemColors.HighlightText;
             txtMatKhau.BorderStyle = BorderStyle.FixedSingle;
             txtMatKhau.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtMatKhau.Location = new Point(125, 453);
+            txtMatKhau.Location = new Point(125, 451);
             txtMatKhau.Margin = new Padding(3, 4, 3, 4);
             txtMatKhau.Name = "txtMatKhau";
             txtMatKhau.PasswordChar = '*';
@@ -119,7 +119,7 @@ namespace RentHouseMaster.Forms
             btnDangNhap.FlatStyle = FlatStyle.Flat;
             btnDangNhap.Font = new Font("Segoe UI", 7.875F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnDangNhap.ForeColor = SystemColors.Control;
-            btnDangNhap.Location = new Point(305, 571);
+            btnDangNhap.Location = new Point(321, 575);
             btnDangNhap.Margin = new Padding(3, 4, 3, 4);
             btnDangNhap.Name = "btnDangNhap";
             btnDangNhap.Size = new Size(166, 73);
@@ -128,52 +128,55 @@ namespace RentHouseMaster.Forms
             btnDangNhap.UseVisualStyleBackColor = false;
             btnDangNhap.Click += btnDangNhap_Click;
             // 
-            // linkLbQuenMK
+            // lnkQuenMK
             // 
-            linkLbQuenMK.AutoSize = true;
-            linkLbQuenMK.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLbQuenMK.LinkColor = Color.Black;
-            linkLbQuenMK.Location = new Point(125, 710);
-            linkLbQuenMK.Name = "linkLbQuenMK";
-            linkLbQuenMK.Size = new Size(198, 32);
-            linkLbQuenMK.TabIndex = 7;
-            linkLbQuenMK.TabStop = true;
-            linkLbQuenMK.Text = "Quên mật khẩu ?";
-            linkLbQuenMK.TextAlign = ContentAlignment.MiddleLeft;
-            linkLbQuenMK.LinkClicked += linkLbQuenMK_Click;
+            lnkQuenMK.AutoSize = true;
+            lnkQuenMK.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lnkQuenMK.LinkColor = Color.Black;
+            lnkQuenMK.Location = new Point(125, 710);
+            lnkQuenMK.Name = "lnkQuenMK";
+            lnkQuenMK.Size = new Size(198, 32);
+            lnkQuenMK.TabIndex = 7;
+            lnkQuenMK.TabStop = true;
+            lnkQuenMK.Text = "Quên mật khẩu ?";
+            lnkQuenMK.TextAlign = ContentAlignment.MiddleLeft;
+            lnkQuenMK.LinkClicked += linkLbQuenMK_Click;
             // 
-            // linkLbDangKy
+            // lnkDangKy
             // 
-            linkLbDangKy.AutoSize = true;
-            linkLbDangKy.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLbDangKy.LinkColor = Color.LimeGreen;
-            linkLbDangKy.Location = new Point(563, 710);
-            linkLbDangKy.Name = "linkLbDangKy";
-            linkLbDangKy.Size = new Size(102, 32);
-            linkLbDangKy.TabIndex = 8;
-            linkLbDangKy.TabStop = true;
-            linkLbDangKy.Text = "Đăng ký";
-            linkLbDangKy.TextAlign = ContentAlignment.MiddleRight;
-            linkLbDangKy.LinkClicked += linkLbDangKy_Click;
+            lnkDangKy.AutoSize = true;
+            lnkDangKy.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lnkDangKy.LinkColor = Color.LimeGreen;
+            lnkDangKy.Location = new Point(563, 710);
+            lnkDangKy.Name = "lnkDangKy";
+            lnkDangKy.Size = new Size(102, 32);
+            lnkDangKy.TabIndex = 8;
+            lnkDangKy.TabStop = true;
+            lnkDangKy.Text = "Đăng ký";
+            lnkDangKy.TextAlign = ContentAlignment.MiddleRight;
+            lnkDangKy.LinkClicked += linkLbDangKy_Click;
             // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(778, 776);
-            Controls.Add(linkLbDangKy);
-            Controls.Add(linkLbQuenMK);
+            Controls.Add(lnkDangKy);
+            Controls.Add(lnkQuenMK);
             Controls.Add(btnDangNhap);
             Controls.Add(txtMatKhau);
-            Controls.Add(lbMatKhau);
+            Controls.Add(lblMatKhau);
             Controls.Add(txtSdtEmail);
-            Controls.Add(lbSdtEmail);
+            Controls.Add(lblSdtEmail);
             Controls.Add(lbName);
             Controls.Add(picLogo);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4, 5, 4, 5);
+            MaximizeBox = false;
             Name = "LoginForm";
             Text = "Login";
+            FormClosing += LoginForm_FormClosing;
             ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -183,13 +186,13 @@ namespace RentHouseMaster.Forms
 
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.Label lbName;
-        private System.Windows.Forms.Label lbSdtEmail;
+        private System.Windows.Forms.Label lblSdtEmail;
         private TextBox txtSdtEmail;
-        private Label lbMatKhau;
+        private Label lblMatKhau;
         private TextBox txtMatKhau;
         private Button btnDangNhap;
-        private LinkLabel linkLbQuenMK;
-        private LinkLabel linkLbDangKy;
+        private LinkLabel lnkQuenMK;
+        private LinkLabel lnkDangKy;
     }
 }
 

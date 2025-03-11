@@ -36,5 +36,18 @@ namespace RentHouseMaster.Forms
             ForgotPassword forgotPassword = new ForgotPassword();
             forgotPassword.Show();
         }
+
+        private void SendCodeForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Bạn có muốn thoát chương trình không?", "Thoát chương trình", MessageBoxButtons.YesNo);
+            if (dialog == DialogResult.Yes)
+            {
+                Environment.Exit(0);
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

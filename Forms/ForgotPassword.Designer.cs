@@ -29,113 +29,113 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ForgotPassword));
-            pictureBox1 = new PictureBox();
-            label1 = new Label();
-            txtPhoneOrEmail = new TextBox();
-            label2 = new Label();
-            txtValidCode = new TextBox();
-            button1 = new Button();
-            llblMXT = new LinkLabel();
-            btnLogin = new LinkLabel();
+            picLogo = new PictureBox();
+            lblSDTEmail = new Label();
+            txtSDTEmail = new TextBox();
+            lblMaXacThuc = new Label();
+            txtMaXacThuc = new TextBox();
+            btnTiepTuc = new Button();
+            lnkGuiLai = new LinkLabel();
+            lnkDangNhap = new LinkLabel();
             lblRHM = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // picLogo
             // 
-            pictureBox1.Image = Properties.Resources.Logo;
-            pictureBox1.Location = new Point(295, 29);
-            pictureBox1.Margin = new Padding(6, 7, 6, 7);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 106);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            picLogo.Image = Properties.Resources.Logo;
+            picLogo.Location = new Point(295, 29);
+            picLogo.Margin = new Padding(6, 7, 6, 7);
+            picLogo.Name = "picLogo";
+            picLogo.Size = new Size(100, 106);
+            picLogo.SizeMode = PictureBoxSizeMode.Zoom;
+            picLogo.TabIndex = 0;
+            picLogo.TabStop = false;
             // 
-            // label1
+            // lblSDTEmail
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(78, 202);
-            label1.Margin = new Padding(6, 0, 6, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(176, 45);
-            label1.TabIndex = 1;
-            label1.Text = "SĐT/Email";
+            lblSDTEmail.AutoSize = true;
+            lblSDTEmail.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblSDTEmail.Location = new Point(78, 202);
+            lblSDTEmail.Margin = new Padding(6, 0, 6, 0);
+            lblSDTEmail.Name = "lblSDTEmail";
+            lblSDTEmail.Size = new Size(176, 45);
+            lblSDTEmail.TabIndex = 1;
+            lblSDTEmail.Text = "SĐT/Email";
             // 
-            // txtPhoneOrEmail
+            // txtSDTEmail
             // 
-            txtPhoneOrEmail.BorderStyle = BorderStyle.FixedSingle;
-            txtPhoneOrEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPhoneOrEmail.Location = new Point(78, 263);
-            txtPhoneOrEmail.Margin = new Padding(6, 7, 6, 7);
-            txtPhoneOrEmail.Name = "txtPhoneOrEmail";
-            txtPhoneOrEmail.PlaceholderText = " nguyenvana@gmail.com";
-            txtPhoneOrEmail.Size = new Size(542, 50);
-            txtPhoneOrEmail.TabIndex = 2;
+            txtSDTEmail.BorderStyle = BorderStyle.FixedSingle;
+            txtSDTEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtSDTEmail.Location = new Point(78, 263);
+            txtSDTEmail.Margin = new Padding(6, 7, 6, 7);
+            txtSDTEmail.Name = "txtSDTEmail";
+            txtSDTEmail.PlaceholderText = " nguyenvana@gmail.com";
+            txtSDTEmail.Size = new Size(542, 50);
+            txtSDTEmail.TabIndex = 2;
             // 
-            // label2
+            // lblMaXacThuc
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(78, 363);
-            label2.Margin = new Padding(6, 0, 6, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(203, 45);
-            label2.TabIndex = 3;
-            label2.Text = "Mã xác thực";
+            lblMaXacThuc.AutoSize = true;
+            lblMaXacThuc.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblMaXacThuc.Location = new Point(78, 363);
+            lblMaXacThuc.Margin = new Padding(6, 0, 6, 0);
+            lblMaXacThuc.Name = "lblMaXacThuc";
+            lblMaXacThuc.Size = new Size(203, 45);
+            lblMaXacThuc.TabIndex = 3;
+            lblMaXacThuc.Text = "Mã xác thực";
             // 
-            // txtValidCode
+            // txtMaXacThuc
             // 
-            txtValidCode.BorderStyle = BorderStyle.FixedSingle;
-            txtValidCode.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtValidCode.Location = new Point(78, 424);
-            txtValidCode.Margin = new Padding(6, 7, 6, 7);
-            txtValidCode.MaxLength = 6;
-            txtValidCode.Name = "txtValidCode";
-            txtValidCode.PlaceholderText = " Hãy nhập mã tại đây";
-            txtValidCode.Size = new Size(542, 47);
-            txtValidCode.TabIndex = 4;
+            txtMaXacThuc.BorderStyle = BorderStyle.FixedSingle;
+            txtMaXacThuc.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtMaXacThuc.Location = new Point(78, 424);
+            txtMaXacThuc.Margin = new Padding(6, 7, 6, 7);
+            txtMaXacThuc.MaxLength = 6;
+            txtMaXacThuc.Name = "txtMaXacThuc";
+            txtMaXacThuc.PlaceholderText = " Hãy nhập mã tại đây";
+            txtMaXacThuc.Size = new Size(542, 47);
+            txtMaXacThuc.TabIndex = 4;
             // 
-            // button1
+            // btnTiepTuc
             // 
-            button1.BackColor = Color.DodgerBlue;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(265, 533);
-            button1.Margin = new Padding(6, 7, 6, 7);
-            button1.Name = "button1";
-            button1.Size = new Size(171, 74);
-            button1.TabIndex = 5;
-            button1.Text = "Tiếp tục";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += btn_Tieptuc;
+            btnTiepTuc.BackColor = Color.DodgerBlue;
+            btnTiepTuc.FlatStyle = FlatStyle.Flat;
+            btnTiepTuc.ForeColor = SystemColors.ControlLightLight;
+            btnTiepTuc.Location = new Point(265, 533);
+            btnTiepTuc.Margin = new Padding(6, 7, 6, 7);
+            btnTiepTuc.Name = "btnTiepTuc";
+            btnTiepTuc.Size = new Size(171, 74);
+            btnTiepTuc.TabIndex = 5;
+            btnTiepTuc.Text = "Tiếp tục";
+            btnTiepTuc.UseVisualStyleBackColor = false;
+            btnTiepTuc.Click += btn_Tieptuc;
             // 
-            // llblMXT
+            // lnkGuiLai
             // 
-            llblMXT.AutoSize = true;
-            llblMXT.LinkColor = Color.Black;
-            llblMXT.Location = new Point(65, 662);
-            llblMXT.Margin = new Padding(6, 0, 6, 0);
-            llblMXT.Name = "llblMXT";
-            llblMXT.Size = new Size(216, 32);
-            llblMXT.TabIndex = 6;
-            llblMXT.TabStop = true;
-            llblMXT.Text = "Gửi lại mã xác thực";
-            llblMXT.LinkClicked += llblMXT_LinkClicked;
+            lnkGuiLai.AutoSize = true;
+            lnkGuiLai.LinkColor = Color.Black;
+            lnkGuiLai.Location = new Point(65, 662);
+            lnkGuiLai.Margin = new Padding(6, 0, 6, 0);
+            lnkGuiLai.Name = "lnkGuiLai";
+            lnkGuiLai.Size = new Size(216, 32);
+            lnkGuiLai.TabIndex = 6;
+            lnkGuiLai.TabStop = true;
+            lnkGuiLai.Text = "Gửi lại mã xác thực";
+            lnkGuiLai.LinkClicked += llblMXT_LinkClicked;
             // 
-            // btnLogin
+            // lnkDangNhap
             // 
-            btnLogin.AutoSize = true;
-            btnLogin.LinkColor = Color.DodgerBlue;
-            btnLogin.Location = new Point(488, 662);
-            btnLogin.Margin = new Padding(6, 0, 6, 0);
-            btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(132, 32);
-            btnLogin.TabIndex = 7;
-            btnLogin.TabStop = true;
-            btnLogin.Text = "Đăng nhập";
-            btnLogin.LinkClicked += linkLabelDN;
+            lnkDangNhap.AutoSize = true;
+            lnkDangNhap.LinkColor = Color.DodgerBlue;
+            lnkDangNhap.Location = new Point(488, 662);
+            lnkDangNhap.Margin = new Padding(6, 0, 6, 0);
+            lnkDangNhap.Name = "lnkDangNhap";
+            lnkDangNhap.Size = new Size(132, 32);
+            lnkDangNhap.TabIndex = 7;
+            lnkDangNhap.TabStop = true;
+            lnkDangNhap.Text = "Đăng nhập";
+            lnkDangNhap.LinkClicked += linkLabelDN;
             // 
             // lblRHM
             // 
@@ -152,35 +152,37 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(715, 738);
             Controls.Add(lblRHM);
-            Controls.Add(btnLogin);
-            Controls.Add(llblMXT);
-            Controls.Add(button1);
-            Controls.Add(txtValidCode);
-            Controls.Add(label2);
-            Controls.Add(txtPhoneOrEmail);
-            Controls.Add(label1);
-            Controls.Add(pictureBox1);
+            Controls.Add(lnkDangNhap);
+            Controls.Add(lnkGuiLai);
+            Controls.Add(btnTiepTuc);
+            Controls.Add(txtMaXacThuc);
+            Controls.Add(lblMaXacThuc);
+            Controls.Add(txtSDTEmail);
+            Controls.Add(lblSDTEmail);
+            Controls.Add(picLogo);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(6, 7, 6, 7);
+            MaximizeBox = false;
             Name = "ForgotPassword";
             Text = "Password Recovery";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            FormClosing += ForgotPassword_FormClosing;
+            ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtPhoneOrEmail;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox picLogo;
+        private System.Windows.Forms.Label lblSDTEmail;
+        private System.Windows.Forms.TextBox txtSDTEmail;
+        private System.Windows.Forms.Label lblMaXacThuc;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.LinkLabel llblMXT;
-        private System.Windows.Forms.LinkLabel btnLogin;
-        private TextBox txtValidCode;
+        private System.Windows.Forms.Button btnTiepTuc;
+        private System.Windows.Forms.LinkLabel lnkGuiLai;
+        private System.Windows.Forms.LinkLabel lnkDangNhap;
+        private TextBox txtMaXacThuc;
         private Label lblRHM;
     }
 }
