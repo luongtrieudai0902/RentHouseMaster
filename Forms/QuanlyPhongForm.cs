@@ -25,7 +25,8 @@ namespace RentHouseMaster.Forms
 
         private void btnThemPhong_Click(object sender, EventArgs e)
         {
-
+            AddRoom addRoom = new AddRoom();
+            addRoom.ShowDialog();
         }
 
         private void LoadRoomData(string filePath)
