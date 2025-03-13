@@ -1,13 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="Forms\AfterSendingCodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\CreateNewPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\ForgotPassword.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\MainForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\MainMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MainLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MainRegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\QuanLyDichVuKhac.cs">
