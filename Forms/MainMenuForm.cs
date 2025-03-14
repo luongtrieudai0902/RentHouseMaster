@@ -170,8 +170,24 @@ namespace RentHouseMaster.Forms
             }
         }
 
+        private Form formHienTai = null;
+        private void OpenChildForm(Form formmoi)
+        {
+            if (formHienTai != null)
+            {
+                formHienTai.Close();  // Close the previous form
+            }
 
-        
+            formHienTai = formmoi;
+            formmoi.TopLevel = false;
+            formmoi.FormBorderStyle = FormBorderStyle.None;
+            formmoi.Dock = DockStyle.Fill;
+            contentPanel.Controls.Clear();
+            contentPanel.Controls.Add(formmoi);
+            formmoi.BringToFront();
+            formmoi.Show();
+        }
+
         private void manageAccomoBtn_Click(object sender, EventArgs e)
         {
             isExpanded = !isExpanded;
@@ -208,13 +224,16 @@ namespace RentHouseMaster.Forms
         {
             //hover
             btn_Hover((Button)sender);
-
+            HomePage homePage = new HomePage();
+            OpenChildForm(homePage);
         }
 
         private void registerAccomoBtn_Click(object sender, EventArgs e)
         {
             //hover
             btn_Hover((Button)sender);
+            RegisterAccomodationPage register = new RegisterAccomodationPage();
+            OpenChildForm(register);
         }
 
         private void manageRoomBtn_Click(object sender, EventArgs e)
