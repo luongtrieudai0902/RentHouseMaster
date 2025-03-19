@@ -541,7 +541,7 @@
             saveBtn.Name = "saveBtn";
             saveBtn.Size = new Size(235, 67);
             saveBtn.TabIndex = 0;
-            saveBtn.Text = "Lưu";
+            saveBtn.Text = "    Lưu";
             saveBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
             saveBtn.UseVisualStyleBackColor = false;
             // 

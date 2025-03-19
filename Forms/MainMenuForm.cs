@@ -240,24 +240,32 @@ namespace RentHouseMaster.Forms
         {
             //hover
             btn_Hover((Button)sender);
+            ManageRoomPage manageRoomPage = new ManageRoomPage();
+            OpenChildForm(manageRoomPage);
         }
 
         private void manageElectricsBtn_Click(object sender, EventArgs e)
         {
             //hover
             btn_Hover((Button)sender);
+            ManageElectricsPage manageElectricsPage = new ManageElectricsPage();
+            OpenChildForm(manageElectricsPage);
         }
 
         private void manageOtherServicesBtn_Click(object sender, EventArgs e)
         {
             //hover
             btn_Hover((Button)sender);
+            ManageOtherServicesPage manageOtherServicesPage = new ManageOtherServicesPage();    
+            OpenChildForm(manageOtherServicesPage);
         }
 
         private void manageTransportationBtn_Click(object sender, EventArgs e)
         {
             //hover
             btn_Hover((Button)sender);
+            ManageTransportationPage manageTransportationPage = new ManageTransportationPage();
+            OpenChildForm(manageTransportationPage);
         }
 
         private void requestBtn_Click(object sender, EventArgs e)

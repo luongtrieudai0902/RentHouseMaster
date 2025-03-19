@@ -7,13 +7,7 @@
     <Compile Update="Forms\CreateNewPassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\ForgotPassword.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Forms\HomePage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\MainForgotPassword.cs">
@@ -28,19 +22,19 @@
     <Compile Update="Forms\MainRegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\QuanLyDichVuKhac.cs">
+    <Compile Update="Forms\ManageElectricsPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\QuanlyPhongForm.cs">
+    <Compile Update="Forms\ManageOtherServicesPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ManageRoomPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ManageTransportationPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\RegisterAccomodationPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Forms\SendCodeForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Forms\RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
