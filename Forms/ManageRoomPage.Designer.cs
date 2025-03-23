@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageRoomPage));
             spacePanel = new Panel();
             contentPanel = new Panel();
             panel3 = new Panel();
-            roomDataGridView = new DataGridView();
+            houseDataGridView = new DataGridView();
             panel2 = new Panel();
+            button2 = new Button();
             panel1 = new Panel();
             button1 = new Button();
             searchBarPanel = new Panel();
@@ -43,10 +44,9 @@
             searchBox = new TextBox();
             AtoZbox = new ComboBox();
             arrangeBox = new ComboBox();
-            button2 = new Button();
             contentPanel.SuspendLayout();
             panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)roomDataGridView).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)houseDataGridView).BeginInit();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             searchBarPanel.SuspendLayout();
@@ -74,50 +74,51 @@
             // 
             // panel3
             // 
-            panel3.Controls.Add(roomDataGridView);
+            panel3.Controls.Add(houseDataGridView);
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(0, 131);
             panel3.Name = "panel3";
             panel3.Size = new Size(1098, 668);
             panel3.TabIndex = 6;
             // 
-            // roomDataGridView
+            // houseDataGridView
             // 
-            roomDataGridView.BackgroundColor = Color.White;
-            roomDataGridView.BorderStyle = BorderStyle.None;
-            roomDataGridView.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            roomDataGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(50, 105, 232);
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle1.ForeColor = Color.White;
-            dataGridViewCellStyle1.Padding = new Padding(20, 0, 0, 0);
-            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(50, 105, 232);
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            roomDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            roomDataGridView.ColumnHeadersHeight = 45;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.White;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle2.Padding = new Padding(10, 15, 10, 15);
-            dataGridViewCellStyle2.SelectionBackColor = Color.Gainsboro;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
-            roomDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
-            roomDataGridView.Dock = DockStyle.Fill;
-            roomDataGridView.GridColor = Color.White;
-            roomDataGridView.Location = new Point(0, 0);
-            roomDataGridView.Name = "roomDataGridView";
-            roomDataGridView.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            roomDataGridView.RowHeadersVisible = false;
-            roomDataGridView.RowHeadersWidth = 51;
-            roomDataGridView.RowTemplate.DefaultCellStyle.Padding = new Padding(20, 0, 0, 0);
-            roomDataGridView.RowTemplate.Height = 45;
-            roomDataGridView.SelectionMode = DataGridViewSelectionMode.CellSelect;
-            roomDataGridView.Size = new Size(1098, 668);
-            roomDataGridView.TabIndex = 0;
+            houseDataGridView.BackgroundColor = Color.White;
+            houseDataGridView.BorderStyle = BorderStyle.None;
+            houseDataGridView.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            houseDataGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(50, 105, 232);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = Color.White;
+            dataGridViewCellStyle3.Padding = new Padding(20, 0, 0, 0);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(50, 105, 232);
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            houseDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            houseDataGridView.ColumnHeadersHeight = 45;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = Color.White;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle4.Padding = new Padding(10, 15, 10, 15);
+            dataGridViewCellStyle4.SelectionBackColor = Color.Gainsboro;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
+            houseDataGridView.DefaultCellStyle = dataGridViewCellStyle4;
+            houseDataGridView.Dock = DockStyle.Fill;
+            houseDataGridView.GridColor = Color.White;
+            houseDataGridView.Location = new Point(0, 0);
+            houseDataGridView.Name = "houseDataGridView";
+            houseDataGridView.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            houseDataGridView.RowHeadersVisible = false;
+            houseDataGridView.RowHeadersWidth = 51;
+            houseDataGridView.RowTemplate.DefaultCellStyle.Padding = new Padding(20, 0, 0, 0);
+            houseDataGridView.RowTemplate.Height = 45;
+            houseDataGridView.SelectionMode = DataGridViewSelectionMode.CellSelect;
+            houseDataGridView.Size = new Size(1098, 668);
+            houseDataGridView.TabIndex = 0;
+            houseDataGridView.CellContentClick += roomDataGridView_CellContentClick;
             // 
             // panel2
             // 
@@ -127,6 +128,23 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(1098, 66);
             panel2.TabIndex = 5;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(70, 197, 100);
+            button2.Dock = DockStyle.Right;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.Location = new Point(891, 0);
+            button2.Name = "button2";
+            button2.Size = new Size(207, 66);
+            button2.TabIndex = 0;
+            button2.Text = "  Thêm nhà";
+            button2.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button2.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -207,23 +225,6 @@
             arrangeBox.TabIndex = 1;
             arrangeBox.Text = "    Sắp xếp theo";
             // 
-            // button2
-            // 
-            button2.BackColor = Color.FromArgb(70, 197, 100);
-            button2.Dock = DockStyle.Right;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.Location = new Point(891, 0);
-            button2.Name = "button2";
-            button2.Size = new Size(207, 66);
-            button2.TabIndex = 0;
-            button2.Text = "  Thêm nhà";
-            button2.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button2.UseVisualStyleBackColor = false;
-            // 
             // ManageRoomPage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -236,7 +237,7 @@
             Text = "ManageRoomPage";
             contentPanel.ResumeLayout(false);
             panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)roomDataGridView).EndInit();
+            ((System.ComponentModel.ISupportInitialize)houseDataGridView).EndInit();
             panel2.ResumeLayout(false);
             panel1.ResumeLayout(false);
             searchBarPanel.ResumeLayout(false);
@@ -256,7 +257,7 @@
         private ComboBox arrangeBox;
         private Button button1;
         private Panel panel3;
-        private DataGridView roomDataGridView;
+        private DataGridView houseDataGridView;
         private Panel panel2;
         private Panel panel1;
         private Button button2;

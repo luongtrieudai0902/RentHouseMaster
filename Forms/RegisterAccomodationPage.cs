@@ -15,6 +15,15 @@ namespace RentHouseMaster.Forms
         public RegisterAccomodationPage()
         {
             InitializeComponent();
+
+            //adding data to gender box
+            genderBox.Items.Add("Nam");
+            genderBox.Items.Add("Nữ");
+
+            nationalityBox.Items.Add("Vietnam");
+            nationalityBox.Items.Add("Myanmar");
+            nationalityBox.Items.Add("Lao");
+            nationalityBox.Items.Add("Cambodia");
         }
     }
 }

@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForgotPassword));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panelMenu = new Panel();
             panelMenuBtn = new Panel();
             btnMinimize = new Button();
@@ -36,18 +42,18 @@
             panel1 = new Panel();
             panel2 = new Panel();
             panel3 = new Panel();
-            container = new Panel();
-            logoBox = new PictureBox();
             loginLinkLabel = new LinkLabel();
+            logoBox = new PictureBox();
             labelMenu = new Label();
-            label1 = new Label();
-            sendCodeBtn = new Button();
-            emailBox = new TextBox();
+            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            emailBox = new Guna.UI2.WinForms.Guna2TextBox();
+            label2 = new Label();
+            sendCodeBtn = new Guna.UI2.WinForms.Guna2Button();
             panelMenu.SuspendLayout();
             panelMenuBtn.SuspendLayout();
             panel3.SuspendLayout();
-            container.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)logoBox).BeginInit();
+            guna2Panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panelMenu
@@ -117,36 +123,12 @@
             // panel3
             // 
             panel3.BackColor = Color.White;
-            panel3.Controls.Add(container);
+            panel3.Controls.Add(guna2Panel1);
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(290, 59);
             panel3.Name = "panel3";
             panel3.Size = new Size(842, 918);
             panel3.TabIndex = 6;
-            // 
-            // container
-            // 
-            container.BorderStyle = BorderStyle.FixedSingle;
-            container.Controls.Add(logoBox);
-            container.Controls.Add(loginLinkLabel);
-            container.Controls.Add(labelMenu);
-            container.Controls.Add(label1);
-            container.Controls.Add(sendCodeBtn);
-            container.Controls.Add(emailBox);
-            container.Location = new Point(130, 165);
-            container.Name = "container";
-            container.Size = new Size(609, 497);
-            container.TabIndex = 10;
-            // 
-            // logoBox
-            // 
-            logoBox.Image = Properties.Resources.Logo;
-            logoBox.Location = new Point(270, 26);
-            logoBox.Name = "logoBox";
-            logoBox.Size = new Size(50, 50);
-            logoBox.SizeMode = PictureBoxSizeMode.Zoom;
-            logoBox.TabIndex = 0;
-            logoBox.TabStop = false;
             // 
             // loginLinkLabel
             // 
@@ -154,58 +136,102 @@
             loginLinkLabel.AutoSize = true;
             loginLinkLabel.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             loginLinkLabel.LinkColor = Color.FromArgb(50, 105, 232);
-            loginLinkLabel.Location = new Point(253, 437);
+            loginLinkLabel.Location = new Point(253, 422);
             loginLinkLabel.Name = "loginLinkLabel";
             loginLinkLabel.Size = new Size(95, 23);
-            loginLinkLabel.TabIndex = 8;
+            loginLinkLabel.TabIndex = 11;
             loginLinkLabel.TabStop = true;
             loginLinkLabel.Text = "Đăng nhập";
             loginLinkLabel.LinkClicked += loginLinkLabel_LinkClicked;
+            // 
+            // logoBox
+            // 
+            logoBox.Image = Properties.Resources.Logo;
+            logoBox.Location = new Point(279, 28);
+            logoBox.Name = "logoBox";
+            logoBox.Size = new Size(50, 50);
+            logoBox.SizeMode = PictureBoxSizeMode.Zoom;
+            logoBox.TabIndex = 12;
+            logoBox.TabStop = false;
             // 
             // labelMenu
             // 
             labelMenu.AutoSize = true;
             labelMenu.Font = new Font("Nirmala UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelMenu.Location = new Point(225, 91);
+            labelMenu.Location = new Point(234, 93);
             labelMenu.Name = "labelMenu";
             labelMenu.Size = new Size(145, 23);
-            labelMenu.TabIndex = 1;
+            labelMenu.TabIndex = 13;
             labelMenu.Text = "RentHouseMaster";
             // 
-            // label1
+            // guna2Panel1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(68, 184);
-            label1.Name = "label1";
-            label1.Size = new Size(70, 31);
-            label1.TabIndex = 2;
-            label1.Text = "Email";
-            // 
-            // sendCodeBtn
-            // 
-            sendCodeBtn.BackColor = Color.FromArgb(50, 105, 232);
-            sendCodeBtn.FlatAppearance.BorderSize = 0;
-            sendCodeBtn.FlatStyle = FlatStyle.Flat;
-            sendCodeBtn.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            sendCodeBtn.ForeColor = Color.White;
-            sendCodeBtn.Location = new Point(68, 326);
-            sendCodeBtn.Name = "sendCodeBtn";
-            sendCodeBtn.Size = new Size(445, 78);
-            sendCodeBtn.TabIndex = 6;
-            sendCodeBtn.Text = "Gửi mã xác thực";
-            sendCodeBtn.UseVisualStyleBackColor = false;
-            sendCodeBtn.Click += sendCodeBtn_Click;
+            guna2Panel1.BorderColor = Color.Black;
+            guna2Panel1.BorderRadius = 14;
+            guna2Panel1.BorderThickness = 1;
+            guna2Panel1.Controls.Add(sendCodeBtn);
+            guna2Panel1.Controls.Add(emailBox);
+            guna2Panel1.Controls.Add(label2);
+            guna2Panel1.Controls.Add(logoBox);
+            guna2Panel1.Controls.Add(loginLinkLabel);
+            guna2Panel1.Controls.Add(labelMenu);
+            guna2Panel1.CustomizableEdges = customizableEdges5;
+            guna2Panel1.Location = new Point(139, 167);
+            guna2Panel1.Name = "guna2Panel1";
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2Panel1.Size = new Size(609, 490);
+            guna2Panel1.TabIndex = 14;
             // 
             // emailBox
             // 
-            emailBox.BorderStyle = BorderStyle.FixedSingle;
-            emailBox.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            emailBox.Location = new Point(68, 234);
+            emailBox.BorderColor = Color.DimGray;
+            emailBox.BorderRadius = 7;
+            emailBox.CustomizableEdges = customizableEdges3;
+            emailBox.DefaultText = "";
+            emailBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            emailBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            emailBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            emailBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            emailBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            emailBox.Font = new Font("Segoe UI", 9F);
+            emailBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            emailBox.Location = new Point(59, 229);
+            emailBox.Margin = new Padding(3, 4, 3, 4);
             emailBox.Name = "emailBox";
             emailBox.PlaceholderText = "vidu@gmail.com";
-            emailBox.Size = new Size(445, 38);
-            emailBox.TabIndex = 3;
+            emailBox.SelectedText = "";
+            emailBox.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            emailBox.Size = new Size(489, 53);
+            emailBox.TabIndex = 18;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(59, 168);
+            label2.Name = "label2";
+            label2.Size = new Size(70, 31);
+            label2.TabIndex = 17;
+            label2.Text = "Email";
+            // 
+            // sendCodeBtn
+            // 
+            sendCodeBtn.BorderRadius = 9;
+            sendCodeBtn.CustomizableEdges = customizableEdges1;
+            sendCodeBtn.DisabledState.BorderColor = Color.DarkGray;
+            sendCodeBtn.DisabledState.CustomBorderColor = Color.DarkGray;
+            sendCodeBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            sendCodeBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            sendCodeBtn.FillColor = Color.FromArgb(50, 105, 232);
+            sendCodeBtn.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            sendCodeBtn.ForeColor = Color.White;
+            sendCodeBtn.Location = new Point(59, 311);
+            sendCodeBtn.Name = "sendCodeBtn";
+            sendCodeBtn.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            sendCodeBtn.Size = new Size(489, 71);
+            sendCodeBtn.TabIndex = 19;
+            sendCodeBtn.Text = "Gửi mã xác thực";
+            sendCodeBtn.Click += sendCodeBtn_Click;
             // 
             // MainForgotPassword
             // 
@@ -222,9 +248,9 @@
             panelMenu.ResumeLayout(false);
             panelMenuBtn.ResumeLayout(false);
             panel3.ResumeLayout(false);
-            container.ResumeLayout(false);
-            container.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)logoBox).EndInit();
+            guna2Panel1.ResumeLayout(false);
+            guna2Panel1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -237,12 +263,12 @@
         private Panel panel1;
         private Panel panel2;
         private Panel panel3;
-        private Panel container;
         private PictureBox logoBox;
-        private LinkLabel loginLinkLabel;
         private Label labelMenu;
-        private Label label1;
-        private Button sendCodeBtn;
-        private TextBox emailBox;
+        private LinkLabel loginLinkLabel;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2TextBox emailBox;
+        private Label label2;
+        private Guna.UI2.WinForms.Guna2Button sendCodeBtn;
     }
 }

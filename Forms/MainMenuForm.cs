@@ -37,7 +37,8 @@ namespace RentHouseMaster.Forms
             defaultIcons[manageTransportationBtn] = Properties.Resources.cycle;
             defaultIcons[requestBtn] = Properties.Resources.mask;
             defaultIcons[manageToolsBtn] = Properties.Resources.tools;
-            defaultIcons[printBtn] = Properties.Resources.electric;   
+            defaultIcons[printBtn] = Properties.Resources.electric;
+            defaultIcons[helpBtn] = Properties.Resources.help;
         }
 
         //close the app
@@ -171,7 +172,7 @@ namespace RentHouseMaster.Forms
         }
 
         private Form formHienTai = null;
-        private void OpenChildForm(Form formmoi)
+        public void OpenChildForm(Form formmoi)
         {
             if (formHienTai != null)
             {
@@ -272,18 +273,24 @@ namespace RentHouseMaster.Forms
         {
             //hover
             btn_Hover((Button)sender);
+            RequestPage requestPage = new RequestPage();
+            OpenChildForm(requestPage);
         }
 
         private void printBtn_Click(object sender, EventArgs e)
         {
             //hover
             btn_Hover((Button)sender);
+            PrintDocPage printDocPage = new PrintDocPage();
+            OpenChildForm(printDocPage);
         }
 
         private void helpBtn_Click(object sender, EventArgs e)
         {
             //hover
             btn_Hover((Button)sender);
+            HelpPage helpPage = new HelpPage(); 
+            OpenChildForm(helpPage);
         }
 
         private void logoutBtn_Click(object sender, EventArgs e)

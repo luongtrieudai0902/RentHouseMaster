@@ -36,6 +36,14 @@ namespace RentHouseMaster.Forms
             servicesDataGridView.Columns[2].HeaderText = "Vệ sinh";
             servicesDataGridView.Columns[3].HeaderText = "Internet";
             //roomDataGridView.Columns[4].HeaderText = "Chức năng";
+
+            DataGridViewLinkColumn linkColumn = new DataGridViewLinkColumn();
+            linkColumn.HeaderText = "Chức năng";
+            linkColumn.Name = "XemNha";
+            linkColumn.Text = "Xem nhà";
+            linkColumn.UseColumnTextForLinkValue = true; //repeative text for all rows
+
+            servicesDataGridView.Columns.Add(linkColumn);
         }
     }
 

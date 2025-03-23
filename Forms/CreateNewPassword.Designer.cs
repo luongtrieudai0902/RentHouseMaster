@@ -29,118 +29,40 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateNewPassword));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel3 = new Panel();
-            container = new Panel();
-            logoBox = new PictureBox();
-            loginLinkLabel = new LinkLabel();
-            labelMenu = new Label();
-            newpswLabel = new Label();
-            confirmBtn = new Button();
-            newPswBox = new TextBox();
             panel2 = new Panel();
             panel1 = new Panel();
             panelMenu = new Panel();
             panelMenuBtn = new Panel();
             btnMinimize = new Button();
             btnClose = new Button();
-            panel3.SuspendLayout();
-            container.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)logoBox).BeginInit();
+            confirmBtn = new Guna.UI2.WinForms.Guna2Button();
+            emailBox = new Guna.UI2.WinForms.Guna2TextBox();
+            loginLinkLabel = new LinkLabel();
+            newpswLabel = new Label();
+            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            logoBox = new PictureBox();
+            labelMenu = new Label();
             panelMenu.SuspendLayout();
             panelMenuBtn.SuspendLayout();
+            guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)logoBox).BeginInit();
             SuspendLayout();
             // 
             // panel3
             // 
             panel3.BackColor = Color.White;
-            panel3.Controls.Add(container);
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(290, 59);
             panel3.Name = "panel3";
             panel3.Size = new Size(842, 918);
             panel3.TabIndex = 10;
-            // 
-            // container
-            // 
-            container.BorderStyle = BorderStyle.FixedSingle;
-            container.Controls.Add(logoBox);
-            container.Controls.Add(loginLinkLabel);
-            container.Controls.Add(labelMenu);
-            container.Controls.Add(newpswLabel);
-            container.Controls.Add(confirmBtn);
-            container.Controls.Add(newPswBox);
-            container.Location = new Point(130, 165);
-            container.Name = "container";
-            container.Size = new Size(609, 497);
-            container.TabIndex = 10;
-            // 
-            // logoBox
-            // 
-            logoBox.Image = Properties.Resources.Logo;
-            logoBox.Location = new Point(270, 26);
-            logoBox.Name = "logoBox";
-            logoBox.Size = new Size(50, 50);
-            logoBox.SizeMode = PictureBoxSizeMode.Zoom;
-            logoBox.TabIndex = 0;
-            logoBox.TabStop = false;
-            // 
-            // loginLinkLabel
-            // 
-            loginLinkLabel.ActiveLinkColor = Color.Red;
-            loginLinkLabel.AutoSize = true;
-            loginLinkLabel.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            loginLinkLabel.LinkColor = Color.FromArgb(50, 105, 232);
-            loginLinkLabel.Location = new Point(253, 437);
-            loginLinkLabel.Name = "loginLinkLabel";
-            loginLinkLabel.Size = new Size(95, 23);
-            loginLinkLabel.TabIndex = 8;
-            loginLinkLabel.TabStop = true;
-            loginLinkLabel.Text = "Đăng nhập";
-            loginLinkLabel.LinkClicked += loginLinkLabel_LinkClicked;
-            // 
-            // labelMenu
-            // 
-            labelMenu.AutoSize = true;
-            labelMenu.Font = new Font("Nirmala UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelMenu.Location = new Point(225, 91);
-            labelMenu.Name = "labelMenu";
-            labelMenu.Size = new Size(145, 23);
-            labelMenu.TabIndex = 1;
-            labelMenu.Text = "RentHouseMaster";
-            // 
-            // newpswLabel
-            // 
-            newpswLabel.AutoSize = true;
-            newpswLabel.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            newpswLabel.Location = new Point(68, 184);
-            newpswLabel.Name = "newpswLabel";
-            newpswLabel.Size = new Size(157, 31);
-            newpswLabel.TabIndex = 2;
-            newpswLabel.Text = "Mật khẩu mới";
-            // 
-            // confirmBtn
-            // 
-            confirmBtn.BackColor = Color.FromArgb(50, 105, 232);
-            confirmBtn.FlatAppearance.BorderSize = 0;
-            confirmBtn.FlatStyle = FlatStyle.Flat;
-            confirmBtn.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            confirmBtn.ForeColor = Color.White;
-            confirmBtn.Location = new Point(68, 326);
-            confirmBtn.Name = "confirmBtn";
-            confirmBtn.Size = new Size(445, 78);
-            confirmBtn.TabIndex = 6;
-            confirmBtn.Text = "Xác nhận";
-            confirmBtn.UseVisualStyleBackColor = false;
-            // 
-            // newPswBox
-            // 
-            newPswBox.BorderStyle = BorderStyle.FixedSingle;
-            newPswBox.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            newPswBox.Location = new Point(68, 244);
-            newPswBox.Name = "newPswBox";
-            newPswBox.PlaceholderText = "Tạo mật khẩu mới";
-            newPswBox.Size = new Size(445, 38);
-            newPswBox.TabIndex = 3;
             // 
             // panel2
             // 
@@ -206,11 +128,115 @@
             btnClose.UseVisualStyleBackColor = true;
             btnClose.Click += btnClose_Click;
             // 
+            // confirmBtn
+            // 
+            confirmBtn.BorderRadius = 9;
+            confirmBtn.CustomizableEdges = customizableEdges1;
+            confirmBtn.DisabledState.BorderColor = Color.DarkGray;
+            confirmBtn.DisabledState.CustomBorderColor = Color.DarkGray;
+            confirmBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            confirmBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            confirmBtn.FillColor = Color.FromArgb(50, 105, 232);
+            confirmBtn.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            confirmBtn.ForeColor = Color.White;
+            confirmBtn.Location = new Point(59, 312);
+            confirmBtn.Name = "confirmBtn";
+            confirmBtn.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            confirmBtn.Size = new Size(489, 71);
+            confirmBtn.TabIndex = 27;
+            confirmBtn.Text = "Xác nhận";
+            // 
+            // emailBox
+            // 
+            emailBox.BorderColor = Color.DimGray;
+            emailBox.BorderRadius = 7;
+            emailBox.CustomizableEdges = customizableEdges3;
+            emailBox.DefaultText = "";
+            emailBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            emailBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            emailBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            emailBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            emailBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            emailBox.Font = new Font("Segoe UI", 9F);
+            emailBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            emailBox.Location = new Point(59, 230);
+            emailBox.Margin = new Padding(3, 4, 3, 4);
+            emailBox.Name = "emailBox";
+            emailBox.PlaceholderText = "Tạo mật khẩu mới";
+            emailBox.SelectedText = "";
+            emailBox.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            emailBox.Size = new Size(489, 53);
+            emailBox.TabIndex = 26;
+            // 
+            // loginLinkLabel
+            // 
+            loginLinkLabel.ActiveLinkColor = Color.Red;
+            loginLinkLabel.AutoSize = true;
+            loginLinkLabel.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            loginLinkLabel.LinkColor = Color.FromArgb(50, 105, 232);
+            loginLinkLabel.Location = new Point(268, 419);
+            loginLinkLabel.Name = "loginLinkLabel";
+            loginLinkLabel.Size = new Size(95, 23);
+            loginLinkLabel.TabIndex = 25;
+            loginLinkLabel.TabStop = true;
+            loginLinkLabel.Text = "Đăng nhập";
+            loginLinkLabel.LinkClicked += loginLinkLabel_LinkClicked;
+            // 
+            // newpswLabel
+            // 
+            newpswLabel.AutoSize = true;
+            newpswLabel.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            newpswLabel.Location = new Point(59, 168);
+            newpswLabel.Name = "newpswLabel";
+            newpswLabel.Size = new Size(157, 31);
+            newpswLabel.TabIndex = 24;
+            newpswLabel.Text = "Mật khẩu mới";
+            // 
+            // guna2Panel1
+            // 
+            guna2Panel1.BackColor = Color.White;
+            guna2Panel1.BorderColor = Color.Black;
+            guna2Panel1.BorderRadius = 14;
+            guna2Panel1.BorderThickness = 1;
+            guna2Panel1.Controls.Add(loginLinkLabel);
+            guna2Panel1.Controls.Add(confirmBtn);
+            guna2Panel1.Controls.Add(emailBox);
+            guna2Panel1.Controls.Add(logoBox);
+            guna2Panel1.Controls.Add(newpswLabel);
+            guna2Panel1.Controls.Add(labelMenu);
+            guna2Panel1.CustomizableEdges = customizableEdges5;
+            guna2Panel1.Location = new Point(407, 243);
+            guna2Panel1.Name = "guna2Panel1";
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2Panel1.Size = new Size(609, 490);
+            guna2Panel1.TabIndex = 15;
+            // 
+            // logoBox
+            // 
+            logoBox.Image = Properties.Resources.Logo;
+            logoBox.Location = new Point(279, 28);
+            logoBox.Name = "logoBox";
+            logoBox.Size = new Size(50, 50);
+            logoBox.SizeMode = PictureBoxSizeMode.Zoom;
+            logoBox.TabIndex = 12;
+            logoBox.TabStop = false;
+            // 
+            // labelMenu
+            // 
+            labelMenu.AutoSize = true;
+            labelMenu.Font = new Font("Nirmala UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelMenu.Location = new Point(234, 93);
+            labelMenu.Name = "labelMenu";
+            labelMenu.Size = new Size(145, 23);
+            labelMenu.TabIndex = 13;
+            labelMenu.Text = "RentHouseMaster";
+            // 
             // CreateNewPassword
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1422, 977);
+            Controls.Add(guna2Panel1);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -218,30 +244,29 @@
             Name = "CreateNewPassword";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CreateNewPassword";
-            panel3.ResumeLayout(false);
-            container.ResumeLayout(false);
-            container.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)logoBox).EndInit();
             panelMenu.ResumeLayout(false);
             panelMenuBtn.ResumeLayout(false);
+            guna2Panel1.ResumeLayout(false);
+            guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)logoBox).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel3;
-        private Panel container;
-        private PictureBox logoBox;
-        private LinkLabel loginLinkLabel;
-        private Label labelMenu;
-        private Label newpswLabel;
-        private Button confirmBtn;
-        private TextBox newPswBox;
         private Panel panel2;
         private Panel panel1;
         private Panel panelMenu;
         private Panel panelMenuBtn;
         private Button btnMinimize;
         private Button btnClose;
+        private Guna.UI2.WinForms.Guna2Button confirmBtn;
+        private Guna.UI2.WinForms.Guna2TextBox emailBox;
+        private LinkLabel loginLinkLabel;
+        private Label newpswLabel;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private PictureBox logoBox;
+        private Label labelMenu;
     }
 }

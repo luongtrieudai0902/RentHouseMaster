@@ -29,11 +29,36 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterAccomodationPage));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            nameBox = new TextBox();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
@@ -58,21 +83,22 @@
             label26 = new Label();
             label27 = new Label();
             label28 = new Label();
-            addressBox = new TextBox();
-            docNumBox = new TextBox();
-            genderBox = new ComboBox();
-            nationalityBox = new ComboBox();
-            comboBox3 = new ComboBox();
-            districtBox = new ComboBox();
-            docTypeBox = new ComboBox();
-            comboBox6 = new ComboBox();
             label29 = new Label();
-            roomBox = new ComboBox();
-            comboBox8 = new ComboBox();
-            birthdayPicker = new DateTimePicker();
-            durationTimePicker = new DateTimePicker();
             panel1 = new Panel();
-            saveBtn = new Button();
+            button2 = new Button();
+            nameBox = new Guna.UI2.WinForms.Guna2TextBox();
+            noofDocBox = new Guna.UI2.WinForms.Guna2TextBox();
+            addressBox = new Guna.UI2.WinForms.Guna2TextBox();
+            genderBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            nationalityBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            docTypeBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            districtBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            tinhBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            xaBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            residentBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            roomBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            dateBox = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            birthdateBox = new Guna.UI2.WinForms.Guna2DateTimePicker();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -116,18 +142,6 @@
             label4.Size = new Size(20, 28);
             label4.TabIndex = 3;
             label4.Text = "*";
-            // 
-            // nameBox
-            // 
-            nameBox.BackColor = Color.White;
-            nameBox.BorderStyle = BorderStyle.FixedSingle;
-            nameBox.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            nameBox.ForeColor = Color.DarkGray;
-            nameBox.Location = new Point(39, 175);
-            nameBox.Name = "nameBox";
-            nameBox.Size = new Size(217, 30);
-            nameBox.TabIndex = 4;
-            nameBox.Text = "Nguyen Van A";
             // 
             // label5
             // 
@@ -232,7 +246,7 @@
             label14.Name = "label14";
             label14.Size = new Size(88, 25);
             label14.TabIndex = 13;
-            label14.Text = "Quốc tích";
+            label14.Text = "Quốc tịch";
             // 
             // label15
             // 
@@ -302,7 +316,7 @@
             label21.AutoSize = true;
             label21.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label21.ForeColor = Color.Red;
-            label21.Location = new Point(359, 408);
+            label21.Location = new Point(391, 408);
             label21.Name = "label21";
             label21.Size = new Size(20, 28);
             label21.TabIndex = 22;
@@ -312,7 +326,7 @@
             // 
             label22.AutoSize = true;
             label22.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label22.Location = new Point(301, 408);
+            label22.Location = new Point(333, 408);
             label22.Name = "label22";
             label22.Size = new Size(65, 25);
             label22.TabIndex = 21;
@@ -344,7 +358,7 @@
             label25.AutoSize = true;
             label25.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label25.ForeColor = Color.Red;
-            label25.Location = new Point(373, 591);
+            label25.Location = new Point(391, 591);
             label25.Name = "label25";
             label25.Size = new Size(20, 28);
             label25.TabIndex = 26;
@@ -354,7 +368,7 @@
             // 
             label26.AutoSize = true;
             label26.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label26.Location = new Point(315, 594);
+            label26.Location = new Point(333, 594);
             label26.Name = "label26";
             label26.Size = new Size(64, 25);
             label26.TabIndex = 25;
@@ -365,7 +379,7 @@
             label27.AutoSize = true;
             label27.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label27.ForeColor = Color.Red;
-            label27.Location = new Point(677, 594);
+            label27.Location = new Point(713, 594);
             label27.Name = "label27";
             label27.Size = new Size(20, 28);
             label27.TabIndex = 28;
@@ -375,101 +389,11 @@
             // 
             label28.AutoSize = true;
             label28.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label28.Location = new Point(540, 594);
+            label28.Location = new Point(576, 594);
             label28.Name = "label28";
             label28.Size = new Size(142, 25);
             label28.TabIndex = 27;
             label28.Text = "Thời gian lưu trú";
-            // 
-            // addressBox
-            // 
-            addressBox.BackColor = Color.White;
-            addressBox.BorderStyle = BorderStyle.FixedSingle;
-            addressBox.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            addressBox.ForeColor = Color.DarkGray;
-            addressBox.Location = new Point(301, 455);
-            addressBox.Name = "addressBox";
-            addressBox.Size = new Size(217, 30);
-            addressBox.TabIndex = 29;
-            addressBox.Text = "Nhập địa chỉ";
-            // 
-            // docNumBox
-            // 
-            docNumBox.BackColor = Color.White;
-            docNumBox.BorderStyle = BorderStyle.FixedSingle;
-            docNumBox.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            docNumBox.ForeColor = Color.DarkGray;
-            docNumBox.Location = new Point(39, 300);
-            docNumBox.Name = "docNumBox";
-            docNumBox.Size = new Size(217, 30);
-            docNumBox.TabIndex = 30;
-            docNumBox.Text = "Nhập số giấy tờ";
-            // 
-            // genderBox
-            // 
-            genderBox.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            genderBox.ForeColor = Color.DarkGray;
-            genderBox.FormattingEnabled = true;
-            genderBox.Location = new Point(333, 175);
-            genderBox.Name = "genderBox";
-            genderBox.Size = new Size(144, 31);
-            genderBox.TabIndex = 31;
-            genderBox.Text = "Chọn";
-            // 
-            // nationalityBox
-            // 
-            nationalityBox.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            nationalityBox.ForeColor = Color.DarkGray;
-            nationalityBox.FormattingEnabled = true;
-            nationalityBox.Location = new Point(333, 300);
-            nationalityBox.Name = "nationalityBox";
-            nationalityBox.Size = new Size(144, 31);
-            nationalityBox.TabIndex = 32;
-            nationalityBox.Text = "Chọn";
-            // 
-            // comboBox3
-            // 
-            comboBox3.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            comboBox3.ForeColor = Color.DarkGray;
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(576, 300);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(232, 31);
-            comboBox3.TabIndex = 33;
-            comboBox3.Text = "Chọn";
-            // 
-            // districtBox
-            // 
-            districtBox.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            districtBox.ForeColor = Color.DarkGray;
-            districtBox.FormattingEnabled = true;
-            districtBox.Location = new Point(885, 299);
-            districtBox.Name = "districtBox";
-            districtBox.Size = new Size(218, 31);
-            districtBox.TabIndex = 34;
-            districtBox.Text = "Chọn";
-            // 
-            // docTypeBox
-            // 
-            docTypeBox.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            docTypeBox.ForeColor = Color.DarkGray;
-            docTypeBox.FormattingEnabled = true;
-            docTypeBox.Location = new Point(885, 174);
-            docTypeBox.Name = "docTypeBox";
-            docTypeBox.Size = new Size(218, 31);
-            docTypeBox.TabIndex = 35;
-            docTypeBox.Text = "CCCD/CMND";
-            // 
-            // comboBox6
-            // 
-            comboBox6.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            comboBox6.ForeColor = Color.DarkGray;
-            comboBox6.FormattingEnabled = true;
-            comboBox6.Location = new Point(39, 454);
-            comboBox6.Name = "comboBox6";
-            comboBox6.Size = new Size(217, 31);
-            comboBox6.TabIndex = 36;
-            comboBox6.Text = "Chọn";
             // 
             // label29
             // 
@@ -481,69 +405,310 @@
             label29.TabIndex = 37;
             label29.Text = "Thông tin đăng ký:";
             // 
-            // roomBox
-            // 
-            roomBox.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            roomBox.ForeColor = Color.DarkGray;
-            roomBox.FormattingEnabled = true;
-            roomBox.Location = new Point(315, 640);
-            roomBox.Name = "roomBox";
-            roomBox.Size = new Size(144, 31);
-            roomBox.TabIndex = 38;
-            roomBox.Text = "Chọn";
-            // 
-            // comboBox8
-            // 
-            comboBox8.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            comboBox8.ForeColor = Color.DarkGray;
-            comboBox8.FormattingEnabled = true;
-            comboBox8.Location = new Point(40, 640);
-            comboBox8.Name = "comboBox8";
-            comboBox8.Size = new Size(217, 31);
-            comboBox8.TabIndex = 39;
-            comboBox8.Text = "Chọn";
-            // 
-            // birthdayPicker
-            // 
-            birthdayPicker.Location = new Point(576, 174);
-            birthdayPicker.Name = "birthdayPicker";
-            birthdayPicker.Size = new Size(250, 27);
-            birthdayPicker.TabIndex = 40;
-            // 
-            // durationTimePicker
-            // 
-            durationTimePicker.CalendarForeColor = Color.DarkGray;
-            durationTimePicker.CalendarTitleForeColor = Color.DarkGray;
-            durationTimePicker.Location = new Point(540, 640);
-            durationTimePicker.Name = "durationTimePicker";
-            durationTimePicker.Size = new Size(250, 27);
-            durationTimePicker.TabIndex = 41;
-            // 
             // panel1
             // 
-            panel1.Controls.Add(saveBtn);
+            panel1.Controls.Add(button2);
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(0, 798);
             panel1.Name = "panel1";
             panel1.Size = new Size(1154, 67);
             panel1.TabIndex = 42;
             // 
-            // saveBtn
+            // button2
             // 
-            saveBtn.BackColor = Color.FromArgb(50, 105, 232);
-            saveBtn.Dock = DockStyle.Right;
-            saveBtn.FlatAppearance.BorderSize = 0;
-            saveBtn.FlatStyle = FlatStyle.Flat;
-            saveBtn.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            saveBtn.ForeColor = Color.White;
-            saveBtn.Image = (Image)resources.GetObject("saveBtn.Image");
-            saveBtn.Location = new Point(919, 0);
-            saveBtn.Name = "saveBtn";
-            saveBtn.Size = new Size(235, 67);
-            saveBtn.TabIndex = 0;
-            saveBtn.Text = "    Lưu";
-            saveBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
-            saveBtn.UseVisualStyleBackColor = false;
+            button2.BackColor = Color.FromArgb(50, 105, 232);
+            button2.Dock = DockStyle.Right;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.Location = new Point(947, 0);
+            button2.Name = "button2";
+            button2.Size = new Size(207, 67);
+            button2.TabIndex = 1;
+            button2.Text = "  Lưu ";
+            button2.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // nameBox
+            // 
+            nameBox.BorderColor = Color.DimGray;
+            nameBox.BorderRadius = 9;
+            nameBox.CustomizableEdges = customizableEdges1;
+            nameBox.DefaultText = "";
+            nameBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            nameBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            nameBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            nameBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            nameBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            nameBox.Font = new Font("Segoe UI", 9F);
+            nameBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            nameBox.Location = new Point(40, 170);
+            nameBox.Margin = new Padding(3, 4, 3, 4);
+            nameBox.Name = "nameBox";
+            nameBox.PlaceholderText = "Nguyen Van A";
+            nameBox.SelectedText = "";
+            nameBox.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            nameBox.Size = new Size(217, 42);
+            nameBox.TabIndex = 43;
+            // 
+            // noofDocBox
+            // 
+            noofDocBox.BorderColor = Color.DimGray;
+            noofDocBox.BorderRadius = 9;
+            noofDocBox.CustomizableEdges = customizableEdges3;
+            noofDocBox.DefaultText = "";
+            noofDocBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            noofDocBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            noofDocBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            noofDocBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            noofDocBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            noofDocBox.Font = new Font("Segoe UI", 9F);
+            noofDocBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            noofDocBox.Location = new Point(40, 299);
+            noofDocBox.Margin = new Padding(3, 4, 3, 4);
+            noofDocBox.Name = "noofDocBox";
+            noofDocBox.PlaceholderText = "Nhập số giấy tờ ";
+            noofDocBox.SelectedText = "";
+            noofDocBox.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            noofDocBox.Size = new Size(217, 46);
+            noofDocBox.TabIndex = 44;
+            // 
+            // addressBox
+            // 
+            addressBox.BorderColor = Color.DimGray;
+            addressBox.BorderRadius = 9;
+            addressBox.CustomizableEdges = customizableEdges5;
+            addressBox.DefaultText = "";
+            addressBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            addressBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            addressBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            addressBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            addressBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            addressBox.Font = new Font("Segoe UI", 9F);
+            addressBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            addressBox.Location = new Point(333, 454);
+            addressBox.Margin = new Padding(3, 4, 3, 4);
+            addressBox.Name = "addressBox";
+            addressBox.PlaceholderText = "Nhập địa chỉ ";
+            addressBox.SelectedText = "";
+            addressBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            addressBox.Size = new Size(217, 46);
+            addressBox.TabIndex = 45;
+            // 
+            // genderBox
+            // 
+            genderBox.BackColor = Color.Transparent;
+            genderBox.BorderColor = Color.DimGray;
+            genderBox.BorderRadius = 9;
+            genderBox.CustomizableEdges = customizableEdges7;
+            genderBox.DrawMode = DrawMode.OwnerDrawFixed;
+            genderBox.DropDownHeight = 105;
+            genderBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            genderBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            genderBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            genderBox.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            genderBox.ForeColor = Color.FromArgb(125, 137, 149);
+            genderBox.IntegralHeight = false;
+            genderBox.ItemHeight = 30;
+            genderBox.Location = new Point(333, 170);
+            genderBox.Name = "genderBox";
+            genderBox.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            genderBox.ShadowDecoration.Shadow = new Padding(10);
+            genderBox.Size = new Size(144, 36);
+            genderBox.TabIndex = 46;
+            // 
+            // nationalityBox
+            // 
+            nationalityBox.BackColor = Color.Transparent;
+            nationalityBox.BorderColor = Color.DimGray;
+            nationalityBox.BorderRadius = 9;
+            nationalityBox.CustomizableEdges = customizableEdges9;
+            nationalityBox.DrawMode = DrawMode.OwnerDrawFixed;
+            nationalityBox.DropDownHeight = 105;
+            nationalityBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            nationalityBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            nationalityBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            nationalityBox.Font = new Font("Segoe UI", 10F);
+            nationalityBox.ForeColor = Color.FromArgb(125, 137, 149);
+            nationalityBox.IntegralHeight = false;
+            nationalityBox.ItemHeight = 30;
+            nationalityBox.Location = new Point(333, 300);
+            nationalityBox.Name = "nationalityBox";
+            nationalityBox.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            nationalityBox.ShadowDecoration.Shadow = new Padding(10);
+            nationalityBox.Size = new Size(188, 36);
+            nationalityBox.TabIndex = 47;
+            // 
+            // docTypeBox
+            // 
+            docTypeBox.BackColor = Color.Transparent;
+            docTypeBox.BorderColor = Color.DimGray;
+            docTypeBox.BorderRadius = 9;
+            docTypeBox.CustomizableEdges = customizableEdges11;
+            docTypeBox.DrawMode = DrawMode.OwnerDrawFixed;
+            docTypeBox.DropDownHeight = 105;
+            docTypeBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            docTypeBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            docTypeBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            docTypeBox.Font = new Font("Segoe UI", 10F);
+            docTypeBox.ForeColor = Color.FromArgb(125, 137, 149);
+            docTypeBox.IntegralHeight = false;
+            docTypeBox.ItemHeight = 30;
+            docTypeBox.Location = new Point(885, 170);
+            docTypeBox.Name = "docTypeBox";
+            docTypeBox.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            docTypeBox.ShadowDecoration.Shadow = new Padding(10);
+            docTypeBox.Size = new Size(218, 36);
+            docTypeBox.TabIndex = 48;
+            // 
+            // districtBox
+            // 
+            districtBox.BackColor = Color.Transparent;
+            districtBox.BorderColor = Color.DimGray;
+            districtBox.BorderRadius = 9;
+            districtBox.CustomizableEdges = customizableEdges13;
+            districtBox.DrawMode = DrawMode.OwnerDrawFixed;
+            districtBox.DropDownHeight = 105;
+            districtBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            districtBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            districtBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            districtBox.Font = new Font("Segoe UI", 10F);
+            districtBox.ForeColor = Color.FromArgb(125, 137, 149);
+            districtBox.IntegralHeight = false;
+            districtBox.ItemHeight = 30;
+            districtBox.Location = new Point(885, 300);
+            districtBox.Name = "districtBox";
+            districtBox.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            districtBox.ShadowDecoration.Shadow = new Padding(10);
+            districtBox.Size = new Size(218, 36);
+            districtBox.TabIndex = 49;
+            // 
+            // tinhBox
+            // 
+            tinhBox.BackColor = Color.Transparent;
+            tinhBox.BorderColor = Color.DimGray;
+            tinhBox.BorderRadius = 9;
+            tinhBox.CustomizableEdges = customizableEdges15;
+            tinhBox.DrawMode = DrawMode.OwnerDrawFixed;
+            tinhBox.DropDownHeight = 105;
+            tinhBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            tinhBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            tinhBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            tinhBox.Font = new Font("Segoe UI", 10F);
+            tinhBox.ForeColor = Color.FromArgb(125, 137, 149);
+            tinhBox.IntegralHeight = false;
+            tinhBox.ItemHeight = 30;
+            tinhBox.Location = new Point(576, 299);
+            tinhBox.Name = "tinhBox";
+            tinhBox.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            tinhBox.ShadowDecoration.Shadow = new Padding(10);
+            tinhBox.Size = new Size(257, 36);
+            tinhBox.TabIndex = 50;
+            // 
+            // xaBox
+            // 
+            xaBox.BackColor = Color.Transparent;
+            xaBox.BorderColor = Color.DimGray;
+            xaBox.BorderRadius = 9;
+            xaBox.CustomizableEdges = customizableEdges17;
+            xaBox.DrawMode = DrawMode.OwnerDrawFixed;
+            xaBox.DropDownHeight = 105;
+            xaBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            xaBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            xaBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            xaBox.Font = new Font("Segoe UI", 10F);
+            xaBox.ForeColor = Color.FromArgb(125, 137, 149);
+            xaBox.IntegralHeight = false;
+            xaBox.ItemHeight = 30;
+            xaBox.Location = new Point(40, 454);
+            xaBox.Name = "xaBox";
+            xaBox.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            xaBox.ShadowDecoration.Shadow = new Padding(10);
+            xaBox.Size = new Size(217, 36);
+            xaBox.TabIndex = 51;
+            // 
+            // residentBox
+            // 
+            residentBox.BackColor = Color.Transparent;
+            residentBox.BorderColor = Color.DimGray;
+            residentBox.BorderRadius = 9;
+            residentBox.CustomizableEdges = customizableEdges19;
+            residentBox.DrawMode = DrawMode.OwnerDrawFixed;
+            residentBox.DropDownHeight = 100;
+            residentBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            residentBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            residentBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            residentBox.Font = new Font("Segoe UI", 10F);
+            residentBox.ForeColor = Color.FromArgb(125, 137, 149);
+            residentBox.IntegralHeight = false;
+            residentBox.ItemHeight = 30;
+            residentBox.Location = new Point(39, 640);
+            residentBox.Name = "residentBox";
+            residentBox.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            residentBox.ShadowDecoration.Shadow = new Padding(10);
+            residentBox.Size = new Size(218, 36);
+            residentBox.TabIndex = 52;
+            // 
+            // roomBox
+            // 
+            roomBox.BackColor = Color.Transparent;
+            roomBox.BorderColor = Color.DimGray;
+            roomBox.BorderRadius = 9;
+            roomBox.CustomizableEdges = customizableEdges21;
+            roomBox.DrawMode = DrawMode.OwnerDrawFixed;
+            roomBox.DropDownHeight = 100;
+            roomBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            roomBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            roomBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            roomBox.Font = new Font("Segoe UI", 10F);
+            roomBox.ForeColor = Color.FromArgb(125, 137, 149);
+            roomBox.IntegralHeight = false;
+            roomBox.ItemHeight = 30;
+            roomBox.Location = new Point(333, 640);
+            roomBox.Name = "roomBox";
+            roomBox.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            roomBox.ShadowDecoration.Shadow = new Padding(10);
+            roomBox.Size = new Size(144, 36);
+            roomBox.TabIndex = 53;
+            // 
+            // dateBox
+            // 
+            dateBox.BorderColor = Color.White;
+            dateBox.BorderRadius = 9;
+            dateBox.Checked = true;
+            dateBox.CustomizableEdges = customizableEdges23;
+            dateBox.FillColor = Color.White;
+            dateBox.Font = new Font("Segoe UI", 9F);
+            dateBox.Format = DateTimePickerFormat.Long;
+            dateBox.Location = new Point(576, 640);
+            dateBox.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            dateBox.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            dateBox.Name = "dateBox";
+            dateBox.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            dateBox.Size = new Size(250, 48);
+            dateBox.TabIndex = 54;
+            dateBox.Value = new DateTime(2025, 3, 23, 12, 51, 2, 224);
+            // 
+            // birthdateBox
+            // 
+            birthdateBox.BackColor = Color.White;
+            birthdateBox.BorderColor = Color.White;
+            birthdateBox.BorderRadius = 9;
+            birthdateBox.Checked = true;
+            birthdateBox.CustomizableEdges = customizableEdges25;
+            birthdateBox.FillColor = Color.White;
+            birthdateBox.Font = new Font("Segoe UI", 9F);
+            birthdateBox.Format = DateTimePickerFormat.Long;
+            birthdateBox.Location = new Point(576, 170);
+            birthdateBox.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            birthdateBox.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            birthdateBox.Name = "birthdateBox";
+            birthdateBox.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            birthdateBox.Size = new Size(250, 48);
+            birthdateBox.TabIndex = 55;
+            birthdateBox.Value = new DateTime(2025, 3, 23, 12, 51, 2, 224);
             // 
             // RegisterAccomodationPage
             // 
@@ -551,20 +716,21 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1154, 865);
-            Controls.Add(panel1);
-            Controls.Add(durationTimePicker);
-            Controls.Add(birthdayPicker);
-            Controls.Add(comboBox8);
+            Controls.Add(birthdateBox);
+            Controls.Add(dateBox);
             Controls.Add(roomBox);
-            Controls.Add(label29);
-            Controls.Add(comboBox6);
-            Controls.Add(docTypeBox);
+            Controls.Add(residentBox);
+            Controls.Add(xaBox);
+            Controls.Add(tinhBox);
             Controls.Add(districtBox);
-            Controls.Add(comboBox3);
+            Controls.Add(docTypeBox);
             Controls.Add(nationalityBox);
             Controls.Add(genderBox);
-            Controls.Add(docNumBox);
             Controls.Add(addressBox);
+            Controls.Add(noofDocBox);
+            Controls.Add(nameBox);
+            Controls.Add(panel1);
+            Controls.Add(label29);
             Controls.Add(label27);
             Controls.Add(label28);
             Controls.Add(label25);
@@ -589,7 +755,6 @@
             Controls.Add(label8);
             Controls.Add(label5);
             Controls.Add(label6);
-            Controls.Add(nameBox);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -607,7 +772,6 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox nameBox;
         private Label label5;
         private Label label6;
         private Label label7;
@@ -632,20 +796,22 @@
         private Label label26;
         private Label label27;
         private Label label28;
-        private TextBox addressBox;
         private TextBox docNumBox;
-        private ComboBox genderBox;
-        private ComboBox nationalityBox;
-        private ComboBox comboBox3;
-        private ComboBox districtBox;
-        private ComboBox docTypeBox;
-        private ComboBox comboBox6;
         private Label label29;
-        private ComboBox roomBox;
-        private ComboBox comboBox8;
-        private DateTimePicker birthdayPicker;
-        private DateTimePicker durationTimePicker;
         private Panel panel1;
-        private Button saveBtn;
+        private Guna.UI2.WinForms.Guna2TextBox nameBox;
+        private Guna.UI2.WinForms.Guna2TextBox noofDocBox;
+        private Guna.UI2.WinForms.Guna2TextBox addressBox;
+        private Guna.UI2.WinForms.Guna2ComboBox genderBox;
+        private Guna.UI2.WinForms.Guna2ComboBox nationalityBox;
+        private Guna.UI2.WinForms.Guna2ComboBox docTypeBox;
+        private Guna.UI2.WinForms.Guna2ComboBox districtBox;
+        private Guna.UI2.WinForms.Guna2ComboBox tinhBox;
+        private Guna.UI2.WinForms.Guna2ComboBox xaBox;
+        private Guna.UI2.WinForms.Guna2ComboBox residentBox;
+        private Guna.UI2.WinForms.Guna2ComboBox roomBox;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dateBox;
+        private Guna.UI2.WinForms.Guna2DateTimePicker birthdateBox;
+        private Button button2;
     }
 }

@@ -29,159 +29,47 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AfterSendingCodeForm));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel3 = new Panel();
-            container = new Panel();
-            sendCodeAgainLinkLabel = new LinkLabel();
-            codeLabel = new Label();
-            codeBox = new TextBox();
-            logoBox = new PictureBox();
-            loginLinkLabel = new LinkLabel();
-            labelMenu = new Label();
-            emailLabel = new Label();
-            continueBtn = new Button();
-            emailBox = new TextBox();
             panel2 = new Panel();
             panel1 = new Panel();
             panelMenu = new Panel();
             panelMenuBtn = new Panel();
             btnMinimize = new Button();
             btnClose = new Button();
+            sendCodeAgainLinkLabel = new LinkLabel();
+            loginLinkLabel = new LinkLabel();
+            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            continueBtn = new Guna.UI2.WinForms.Guna2Button();
+            emailBox = new Guna.UI2.WinForms.Guna2TextBox();
+            label2 = new Label();
+            logoBox = new PictureBox();
+            labelMenu = new Label();
+            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            label1 = new Label();
             panel3.SuspendLayout();
-            container.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)logoBox).BeginInit();
             panelMenu.SuspendLayout();
             panelMenuBtn.SuspendLayout();
+            guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)logoBox).BeginInit();
             SuspendLayout();
             // 
             // panel3
             // 
             panel3.BackColor = Color.White;
-            panel3.Controls.Add(container);
+            panel3.Controls.Add(guna2Panel1);
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(290, 59);
             panel3.Name = "panel3";
             panel3.Size = new Size(842, 918);
             panel3.TabIndex = 10;
-            // 
-            // container
-            // 
-            container.BorderStyle = BorderStyle.FixedSingle;
-            container.Controls.Add(sendCodeAgainLinkLabel);
-            container.Controls.Add(codeLabel);
-            container.Controls.Add(codeBox);
-            container.Controls.Add(logoBox);
-            container.Controls.Add(loginLinkLabel);
-            container.Controls.Add(labelMenu);
-            container.Controls.Add(emailLabel);
-            container.Controls.Add(continueBtn);
-            container.Controls.Add(emailBox);
-            container.Location = new Point(133, 133);
-            container.Name = "container";
-            container.Size = new Size(609, 643);
-            container.TabIndex = 10;
-            // 
-            // sendCodeAgainLinkLabel
-            // 
-            sendCodeAgainLinkLabel.ActiveLinkColor = Color.Red;
-            sendCodeAgainLinkLabel.AutoSize = true;
-            sendCodeAgainLinkLabel.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            sendCodeAgainLinkLabel.LinkColor = Color.Black;
-            sendCodeAgainLinkLabel.Location = new Point(68, 574);
-            sendCodeAgainLinkLabel.Name = "sendCodeAgainLinkLabel";
-            sendCodeAgainLinkLabel.Size = new Size(156, 23);
-            sendCodeAgainLinkLabel.TabIndex = 11;
-            sendCodeAgainLinkLabel.TabStop = true;
-            sendCodeAgainLinkLabel.Text = "Gửi lại mã xác thực";
-            sendCodeAgainLinkLabel.LinkClicked += sendCodeAgainLinkLabel_LinkClicked;
-            // 
-            // codeLabel
-            // 
-            codeLabel.AutoSize = true;
-            codeLabel.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            codeLabel.Location = new Point(68, 319);
-            codeLabel.Name = "codeLabel";
-            codeLabel.Size = new Size(140, 31);
-            codeLabel.TabIndex = 9;
-            codeLabel.Text = "Mã xác thực";
-            // 
-            // codeBox
-            // 
-            codeBox.BorderStyle = BorderStyle.FixedSingle;
-            codeBox.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            codeBox.Location = new Point(68, 369);
-            codeBox.Name = "codeBox";
-            codeBox.PlaceholderText = "Nhập mã xác thực";
-            codeBox.Size = new Size(445, 38);
-            codeBox.TabIndex = 10;
-            // 
-            // logoBox
-            // 
-            logoBox.Image = Properties.Resources.Logo;
-            logoBox.Location = new Point(270, 26);
-            logoBox.Name = "logoBox";
-            logoBox.Size = new Size(50, 50);
-            logoBox.SizeMode = PictureBoxSizeMode.Zoom;
-            logoBox.TabIndex = 0;
-            logoBox.TabStop = false;
-            // 
-            // loginLinkLabel
-            // 
-            loginLinkLabel.ActiveLinkColor = Color.Red;
-            loginLinkLabel.AutoSize = true;
-            loginLinkLabel.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            loginLinkLabel.LinkColor = Color.FromArgb(50, 105, 232);
-            loginLinkLabel.Location = new Point(418, 574);
-            loginLinkLabel.Name = "loginLinkLabel";
-            loginLinkLabel.Size = new Size(95, 23);
-            loginLinkLabel.TabIndex = 8;
-            loginLinkLabel.TabStop = true;
-            loginLinkLabel.Text = "Đăng nhập";
-            loginLinkLabel.LinkClicked += loginLinkLabel_LinkClicked;
-            // 
-            // labelMenu
-            // 
-            labelMenu.AutoSize = true;
-            labelMenu.Font = new Font("Nirmala UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelMenu.Location = new Point(225, 91);
-            labelMenu.Name = "labelMenu";
-            labelMenu.Size = new Size(145, 23);
-            labelMenu.TabIndex = 1;
-            labelMenu.Text = "RentHouseMaster";
-            // 
-            // emailLabel
-            // 
-            emailLabel.AutoSize = true;
-            emailLabel.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            emailLabel.Location = new Point(68, 183);
-            emailLabel.Name = "emailLabel";
-            emailLabel.Size = new Size(70, 31);
-            emailLabel.TabIndex = 2;
-            emailLabel.Text = "Email";
-            // 
-            // continueBtn
-            // 
-            continueBtn.BackColor = Color.FromArgb(50, 105, 232);
-            continueBtn.FlatAppearance.BorderSize = 0;
-            continueBtn.FlatStyle = FlatStyle.Flat;
-            continueBtn.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            continueBtn.ForeColor = Color.White;
-            continueBtn.Location = new Point(68, 451);
-            continueBtn.Name = "continueBtn";
-            continueBtn.Size = new Size(445, 78);
-            continueBtn.TabIndex = 6;
-            continueBtn.Text = "Tiếp tục";
-            continueBtn.UseVisualStyleBackColor = false;
-            continueBtn.Click += continueBtn_Click;
-            // 
-            // emailBox
-            // 
-            emailBox.BorderStyle = BorderStyle.FixedSingle;
-            emailBox.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            emailBox.Location = new Point(68, 233);
-            emailBox.Name = "emailBox";
-            emailBox.PlaceholderText = "vidu@gmail.com";
-            emailBox.Size = new Size(445, 38);
-            emailBox.TabIndex = 3;
             // 
             // panel2
             // 
@@ -247,6 +135,158 @@
             btnClose.UseVisualStyleBackColor = true;
             btnClose.Click += btnClose_Click;
             // 
+            // sendCodeAgainLinkLabel
+            // 
+            sendCodeAgainLinkLabel.ActiveLinkColor = Color.Red;
+            sendCodeAgainLinkLabel.AutoSize = true;
+            sendCodeAgainLinkLabel.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            sendCodeAgainLinkLabel.LinkColor = Color.Black;
+            sendCodeAgainLinkLabel.Location = new Point(59, 563);
+            sendCodeAgainLinkLabel.Name = "sendCodeAgainLinkLabel";
+            sendCodeAgainLinkLabel.Size = new Size(156, 23);
+            sendCodeAgainLinkLabel.TabIndex = 13;
+            sendCodeAgainLinkLabel.TabStop = true;
+            sendCodeAgainLinkLabel.Text = "Gửi lại mã xác thực";
+            sendCodeAgainLinkLabel.LinkClicked += sendCodeAgainLinkLabel_LinkClicked;
+            // 
+            // loginLinkLabel
+            // 
+            loginLinkLabel.ActiveLinkColor = Color.Red;
+            loginLinkLabel.AutoSize = true;
+            loginLinkLabel.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            loginLinkLabel.LinkColor = Color.FromArgb(50, 105, 232);
+            loginLinkLabel.Location = new Point(444, 563);
+            loginLinkLabel.Name = "loginLinkLabel";
+            loginLinkLabel.Size = new Size(95, 23);
+            loginLinkLabel.TabIndex = 12;
+            loginLinkLabel.TabStop = true;
+            loginLinkLabel.Text = "Đăng nhập";
+            loginLinkLabel.LinkClicked += loginLinkLabel_LinkClicked;
+            // 
+            // guna2Panel1
+            // 
+            guna2Panel1.BorderColor = Color.Black;
+            guna2Panel1.BorderRadius = 14;
+            guna2Panel1.BorderThickness = 1;
+            guna2Panel1.Controls.Add(guna2TextBox1);
+            guna2Panel1.Controls.Add(label1);
+            guna2Panel1.Controls.Add(continueBtn);
+            guna2Panel1.Controls.Add(loginLinkLabel);
+            guna2Panel1.Controls.Add(sendCodeAgainLinkLabel);
+            guna2Panel1.Controls.Add(emailBox);
+            guna2Panel1.Controls.Add(label2);
+            guna2Panel1.Controls.Add(logoBox);
+            guna2Panel1.Controls.Add(labelMenu);
+            guna2Panel1.CustomizableEdges = customizableEdges7;
+            guna2Panel1.Location = new Point(117, 214);
+            guna2Panel1.Name = "guna2Panel1";
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2Panel1.Size = new Size(609, 613);
+            guna2Panel1.TabIndex = 15;
+            // 
+            // continueBtn
+            // 
+            continueBtn.BorderRadius = 9;
+            continueBtn.CustomizableEdges = customizableEdges3;
+            continueBtn.DisabledState.BorderColor = Color.DarkGray;
+            continueBtn.DisabledState.CustomBorderColor = Color.DarkGray;
+            continueBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            continueBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            continueBtn.FillColor = Color.FromArgb(50, 105, 232);
+            continueBtn.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            continueBtn.ForeColor = Color.White;
+            continueBtn.Location = new Point(59, 446);
+            continueBtn.Name = "continueBtn";
+            continueBtn.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            continueBtn.Size = new Size(489, 71);
+            continueBtn.TabIndex = 19;
+            continueBtn.Text = "Tiếp tục";
+            continueBtn.Click += continueBtn_Click;
+            // 
+            // emailBox
+            // 
+            emailBox.BorderColor = Color.DimGray;
+            emailBox.BorderRadius = 7;
+            emailBox.CustomizableEdges = customizableEdges5;
+            emailBox.DefaultText = "";
+            emailBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            emailBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            emailBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            emailBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            emailBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            emailBox.Font = new Font("Segoe UI", 9F);
+            emailBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            emailBox.Location = new Point(59, 224);
+            emailBox.Margin = new Padding(3, 4, 3, 4);
+            emailBox.Name = "emailBox";
+            emailBox.PlaceholderText = "vidu@gmail.com";
+            emailBox.SelectedText = "";
+            emailBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            emailBox.Size = new Size(489, 53);
+            emailBox.TabIndex = 18;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(59, 168);
+            label2.Name = "label2";
+            label2.Size = new Size(70, 31);
+            label2.TabIndex = 17;
+            label2.Text = "Email";
+            // 
+            // logoBox
+            // 
+            logoBox.Image = Properties.Resources.Logo;
+            logoBox.Location = new Point(279, 28);
+            logoBox.Name = "logoBox";
+            logoBox.Size = new Size(50, 50);
+            logoBox.SizeMode = PictureBoxSizeMode.Zoom;
+            logoBox.TabIndex = 12;
+            logoBox.TabStop = false;
+            // 
+            // labelMenu
+            // 
+            labelMenu.AutoSize = true;
+            labelMenu.Font = new Font("Nirmala UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelMenu.Location = new Point(234, 93);
+            labelMenu.Name = "labelMenu";
+            labelMenu.Size = new Size(145, 23);
+            labelMenu.TabIndex = 13;
+            labelMenu.Text = "RentHouseMaster";
+            // 
+            // guna2TextBox1
+            // 
+            guna2TextBox1.BorderColor = Color.DimGray;
+            guna2TextBox1.BorderRadius = 7;
+            guna2TextBox1.CustomizableEdges = customizableEdges1;
+            guna2TextBox1.DefaultText = "";
+            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2TextBox1.Font = new Font("Segoe UI", 9F);
+            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2TextBox1.Location = new Point(59, 365);
+            guna2TextBox1.Margin = new Padding(3, 4, 3, 4);
+            guna2TextBox1.Name = "guna2TextBox1";
+            guna2TextBox1.PlaceholderText = "Nhập mã xác thực";
+            guna2TextBox1.SelectedText = "";
+            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2TextBox1.Size = new Size(489, 53);
+            guna2TextBox1.TabIndex = 21;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(59, 309);
+            label1.Name = "label1";
+            label1.Size = new Size(140, 31);
+            label1.TabIndex = 20;
+            label1.Text = "Mã xác thực";
+            // 
             // AfterSendingCodeForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -260,32 +300,32 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "AfterSendingCodeForm";
             panel3.ResumeLayout(false);
-            container.ResumeLayout(false);
-            container.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)logoBox).EndInit();
             panelMenu.ResumeLayout(false);
             panelMenuBtn.ResumeLayout(false);
+            guna2Panel1.ResumeLayout(false);
+            guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)logoBox).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel3;
-        private Panel container;
-        private PictureBox logoBox;
-        private LinkLabel loginLinkLabel;
-        private Label labelMenu;
-        private Label emailLabel;
-        private Button continueBtn;
-        private TextBox emailBox;
         private Panel panel2;
         private Panel panel1;
         private Panel panelMenu;
         private Panel panelMenuBtn;
         private Button btnMinimize;
         private Button btnClose;
-        private Label codeLabel;
-        private TextBox codeBox;
         private LinkLabel sendCodeAgainLinkLabel;
+        private LinkLabel loginLinkLabel;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Label label1;
+        private Guna.UI2.WinForms.Guna2Button continueBtn;
+        private Guna.UI2.WinForms.Guna2TextBox emailBox;
+        private Label label2;
+        private PictureBox logoBox;
+        private Label labelMenu;
     }
 }

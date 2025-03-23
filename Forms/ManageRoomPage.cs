@@ -18,7 +18,7 @@ namespace RentHouseMaster.Forms
         {
             InitializeComponent();
             LoadRoomData();
-            roomDataGridView.EnableHeadersVisualStyles = false;
+            houseDataGridView.EnableHeadersVisualStyles = false;
         }
 
         private void LoadRoomData()
@@ -28,25 +28,47 @@ namespace RentHouseMaster.Forms
             roomList.Add(new Room { nha = "22L Quận 8", phongtrong = "3", phongchuathanhtoan = "0", hethanhopdong = "0" });
             roomList.Add(new Room { nha = "25M Quận 7", phongtrong = "1/2", phongchuathanhtoan = "0", hethanhopdong = "2" });
 
-            roomDataGridView.DataSource = null;
-            roomDataGridView.DataSource = roomList;
+            houseDataGridView.DataSource = null;
+            houseDataGridView.DataSource = roomList;
 
-            roomDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            houseDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             // set headers
-            roomDataGridView.Columns[0].HeaderText = "Nhà";
-            roomDataGridView.Columns[1].HeaderText = "Phòng trống";
-            roomDataGridView.Columns[2].HeaderText = "Phòng chưa thanh toán";
-            roomDataGridView.Columns[3].HeaderText = "Sắp hết hạn hợp đồng";
-            //roomDataGridView.Columns[4].HeaderText = "Chức năng";
+            houseDataGridView.Columns[0].HeaderText = "Nhà";
+            houseDataGridView.Columns[1].HeaderText = "Phòng trống";
+            houseDataGridView.Columns[2].HeaderText = "Phòng chưa thanh toán";
+            houseDataGridView.Columns[3].HeaderText = "Sắp hết hạn hợp đồng";
+
+            //adding the link column for data grid view 
+            DataGridViewLinkColumn linkColumn = new DataGridViewLinkColumn();
+            linkColumn.HeaderText = "Chức năng";
+            linkColumn.Name = "XemNha";
+            linkColumn.Text = "Xem nhà";
+            linkColumn.UseColumnTextForLinkValue = true; //repeative text for all rows
+
+            houseDataGridView.Columns.Add(linkColumn);
         }
-    }
 
-    public class Room
-    {
-        public string nha { get; set; }
-        public string phongtrong { get; set; }
-        public string phongchuathanhtoan { get; set; }
-        public string hethanhopdong { get; set; }
+        private void roomDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (houseDataGridView.Columns[e.ColumnIndex].Name == "XemNha" && e.RowIndex >= 0)
+            {
+                // Get the selected house data
+                string houseName = houseDataGridView.Rows[e.RowIndex].Cells[0].Value.ToString();
 
+                HouseDetailPage houseDetailPage = new HouseDetailPage();
+
+                MainMenuForm mainMenuForm = (MainMenuForm)this.ParentForm;
+                mainMenuForm.OpenChildForm(houseDetailPage);
+            }
+        }
+
+        public class Room
+        {
+            public string nha { get; set; }
+            public string phongtrong { get; set; }
+            public string phongchuathanhtoan { get; set; }
+            public string hethanhopdong { get; set; }
+
+        }
     }
 }
