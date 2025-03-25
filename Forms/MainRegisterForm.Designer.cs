@@ -37,15 +37,21 @@
             panel2 = new Panel();
             panel3 = new Panel();
             panel4 = new Panel();
+            lblRole = new Label();
+            cbRole = new ComboBox();
+            lblPhone = new Label();
+            txtPhone = new TextBox();
+            txtConfirmPassword = new TextBox();
+            lblConfirmPassword = new Label();
             nameLabel = new Label();
-            nameBox = new TextBox();
+            txtName = new TextBox();
             logoBox = new PictureBox();
             labelMenu = new Label();
             loginLinkLabel = new LinkLabel();
             emalLabel = new Label();
             registerBtn = new Button();
-            emailBox = new TextBox();
-            pswBox = new TextBox();
+            txtEmail = new TextBox();
+            txtPassword = new TextBox();
             pswLabel = new Label();
             panelMenu.SuspendLayout();
             panelMenuBtn.SuspendLayout();
@@ -131,40 +137,106 @@
             // panel4
             // 
             panel4.BorderStyle = BorderStyle.FixedSingle;
+            panel4.Controls.Add(lblRole);
+            panel4.Controls.Add(cbRole);
+            panel4.Controls.Add(lblPhone);
+            panel4.Controls.Add(txtPhone);
+            panel4.Controls.Add(txtConfirmPassword);
+            panel4.Controls.Add(lblConfirmPassword);
             panel4.Controls.Add(nameLabel);
-            panel4.Controls.Add(nameBox);
+            panel4.Controls.Add(txtName);
             panel4.Controls.Add(logoBox);
             panel4.Controls.Add(labelMenu);
             panel4.Controls.Add(loginLinkLabel);
             panel4.Controls.Add(emalLabel);
             panel4.Controls.Add(registerBtn);
-            panel4.Controls.Add(emailBox);
-            panel4.Controls.Add(pswBox);
+            panel4.Controls.Add(txtEmail);
+            panel4.Controls.Add(txtPassword);
             panel4.Controls.Add(pswLabel);
             panel4.Location = new Point(132, 84);
             panel4.Name = "panel4";
-            panel4.Size = new Size(609, 746);
+            panel4.Size = new Size(609, 807);
             panel4.TabIndex = 10;
+            // 
+            // lblRole
+            // 
+            lblRole.AutoSize = true;
+            lblRole.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblRole.Location = new Point(70, 597);
+            lblRole.Name = "lblRole";
+            lblRole.Size = new Size(130, 28);
+            lblRole.TabIndex = 16;
+            lblRole.Text = "Vai trò (Role)";
+            // 
+            // cbRole
+            // 
+            cbRole.FormattingEnabled = true;
+            cbRole.Items.AddRange(new object[] { "Chủ Nhà (Owner)", "Nhân Viên Quản Lý (Manager)", "Khách Thuê (Tenant)" });
+            cbRole.Location = new Point(70, 628);
+            cbRole.Name = "cbRole";
+            cbRole.Size = new Size(445, 28);
+            cbRole.TabIndex = 15;
+            // 
+            // lblPhone
+            // 
+            lblPhone.AutoSize = true;
+            lblPhone.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPhone.Location = new Point(70, 331);
+            lblPhone.Name = "lblPhone";
+            lblPhone.Size = new Size(293, 28);
+            lblPhone.TabIndex = 14;
+            lblPhone.Text = "Số điện thoại (Phone Number)";
+            // 
+            // txtPhone
+            // 
+            txtPhone.BorderStyle = BorderStyle.FixedSingle;
+            txtPhone.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtPhone.Location = new Point(70, 372);
+            txtPhone.Name = "txtPhone";
+            txtPhone.PlaceholderText = "0123456789";
+            txtPhone.Size = new Size(445, 34);
+            txtPhone.TabIndex = 13;
+            // 
+            // txtConfirmPassword
+            // 
+            txtConfirmPassword.BorderStyle = BorderStyle.FixedSingle;
+            txtConfirmPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtConfirmPassword.Location = new Point(70, 552);
+            txtConfirmPassword.Name = "txtConfirmPassword";
+            txtConfirmPassword.PasswordChar = '*';
+            txtConfirmPassword.PlaceholderText = "*******";
+            txtConfirmPassword.Size = new Size(445, 34);
+            txtConfirmPassword.TabIndex = 12;
+            // 
+            // lblConfirmPassword
+            // 
+            lblConfirmPassword.AutoSize = true;
+            lblConfirmPassword.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblConfirmPassword.Location = new Point(70, 505);
+            lblConfirmPassword.Name = "lblConfirmPassword";
+            lblConfirmPassword.Size = new Size(371, 28);
+            lblConfirmPassword.TabIndex = 11;
+            lblConfirmPassword.Text = "Xác nhận mật khẩu (Confirm Password)";
             // 
             // nameLabel
             // 
             nameLabel.AutoSize = true;
             nameLabel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            nameLabel.Location = new Point(73, 177);
+            nameLabel.Location = new Point(70, 150);
             nameLabel.Name = "nameLabel";
-            nameLabel.Size = new Size(101, 28);
+            nameLabel.Size = new Size(219, 28);
             nameLabel.TabIndex = 9;
-            nameLabel.Text = "Họ và tên";
+            nameLabel.Text = "Họ và tên (User name)";
             // 
-            // nameBox
+            // txtName
             // 
-            nameBox.BorderStyle = BorderStyle.FixedSingle;
-            nameBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            nameBox.Location = new Point(73, 227);
-            nameBox.Name = "nameBox";
-            nameBox.PlaceholderText = "Nguyễn Van Ví Vụ";
-            nameBox.Size = new Size(445, 34);
-            nameBox.TabIndex = 10;
+            txtName.BorderStyle = BorderStyle.FixedSingle;
+            txtName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtName.Location = new Point(70, 196);
+            txtName.Name = "txtName";
+            txtName.PlaceholderText = "Nguyễn Van Ví Vụ";
+            txtName.Size = new Size(445, 34);
+            txtName.TabIndex = 10;
             // 
             // logoBox
             // 
@@ -192,7 +264,7 @@
             loginLinkLabel.AutoSize = true;
             loginLinkLabel.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             loginLinkLabel.LinkColor = Color.Black;
-            loginLinkLabel.Location = new Point(225, 689);
+            loginLinkLabel.Location = new Point(216, 773);
             loginLinkLabel.Name = "loginLinkLabel";
             loginLinkLabel.Size = new Size(154, 23);
             loginLinkLabel.TabIndex = 7;
@@ -204,7 +276,7 @@
             // 
             emalLabel.AutoSize = true;
             emalLabel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            emalLabel.Location = new Point(73, 305);
+            emalLabel.Location = new Point(70, 233);
             emalLabel.Name = "emalLabel";
             emalLabel.Size = new Size(60, 28);
             emalLabel.TabIndex = 2;
@@ -217,43 +289,44 @@
             registerBtn.FlatStyle = FlatStyle.Flat;
             registerBtn.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             registerBtn.ForeColor = Color.White;
-            registerBtn.Location = new Point(73, 576);
+            registerBtn.Location = new Point(70, 679);
             registerBtn.Name = "registerBtn";
             registerBtn.Size = new Size(445, 78);
             registerBtn.TabIndex = 6;
             registerBtn.Text = "Đăng ký";
             registerBtn.UseVisualStyleBackColor = false;
+            registerBtn.Click += registerBtn_Click;
             // 
-            // emailBox
+            // txtEmail
             // 
-            emailBox.BorderStyle = BorderStyle.FixedSingle;
-            emailBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            emailBox.Location = new Point(73, 355);
-            emailBox.Name = "emailBox";
-            emailBox.PlaceholderText = "vidu@gmail.com";
-            emailBox.Size = new Size(445, 34);
-            emailBox.TabIndex = 3;
+            txtEmail.BorderStyle = BorderStyle.FixedSingle;
+            txtEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtEmail.Location = new Point(70, 273);
+            txtEmail.Name = "txtEmail";
+            txtEmail.PlaceholderText = "vidu@gmail.com";
+            txtEmail.Size = new Size(445, 34);
+            txtEmail.TabIndex = 3;
             // 
-            // pswBox
+            // txtPassword
             // 
-            pswBox.BorderStyle = BorderStyle.FixedSingle;
-            pswBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            pswBox.Location = new Point(73, 490);
-            pswBox.Name = "pswBox";
-            pswBox.PasswordChar = '*';
-            pswBox.PlaceholderText = "*******";
-            pswBox.Size = new Size(445, 34);
-            pswBox.TabIndex = 5;
+            txtPassword.BorderStyle = BorderStyle.FixedSingle;
+            txtPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtPassword.Location = new Point(70, 459);
+            txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
+            txtPassword.PlaceholderText = "*******";
+            txtPassword.Size = new Size(445, 34);
+            txtPassword.TabIndex = 5;
             // 
             // pswLabel
             // 
             pswLabel.AutoSize = true;
             pswLabel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            pswLabel.Location = new Point(73, 434);
+            pswLabel.Location = new Point(70, 428);
             pswLabel.Name = "pswLabel";
-            pswLabel.Size = new Size(98, 28);
+            pswLabel.Size = new Size(203, 28);
             pswLabel.TabIndex = 4;
-            pswLabel.Text = "Mật khẩu";
+            pswLabel.Text = "Mật khẩu (Password)";
             // 
             // MainRegisterForm
             // 
@@ -287,14 +360,20 @@
         private Panel panel3;
         private Panel panel4;
         private Label nameLabel;
-        private TextBox nameBox;
+        private TextBox txtName;
         private PictureBox logoBox;
         private Label labelMenu;
         private LinkLabel loginLinkLabel;
         private Label emalLabel;
         private Button registerBtn;
-        private TextBox emailBox;
-        private TextBox pswBox;
+        private TextBox txtEmail;
+        private TextBox txtPassword;
         private Label pswLabel;
+        private TextBox txtConfirmPassword;
+        private Label lblPhone;
+        private TextBox txtPhone;
+        private ComboBox cbRole;
+        private Label lblRole;
+        private Label lblConfirmPassword;
     }
 }

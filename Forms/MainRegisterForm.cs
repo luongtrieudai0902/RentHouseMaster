@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RentHouseMaster.Services;
 
 namespace RentHouseMaster.Forms
 {
@@ -57,5 +58,94 @@ namespace RentHouseMaster.Forms
             MainLoginForm loginForm = new MainLoginForm();
             loginForm.Show();
         }
+
+        private void registerBtn_Click(object sender, EventArgs e)
+        {
+            string username = txtName.Text.Trim();
+            string email = txtEmail.Text.Trim();
+            string password = txtPassword.Text;
+            string confirmPassword = txtConfirmPassword.Text;
+            string phone = txtPhone.Text.Trim();
+            string role = cbRole.SelectedItem?.ToString();
+            if (role == "Chủ Nhà (Owner)")
+            {
+                role = "ChuNha";
+            }
+            else if (role == "Nhân Viên Quản Lý (Manager)")
+            {
+                role = "NhanVien";
+            }
+            else
+            {
+                role = "KhachThue";
+            }
+
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(email) ||
+                string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(confirmPassword) ||
+                string.IsNullOrWhiteSpace(role) || string.IsNullOrWhiteSpace(phone))
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!IsValidEmail(email))
+            {
+                MessageBox.Show("Email không hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (password.Length < 6)
+            {
+                MessageBox.Show("Mật khẩu phải có ít nhất 6 ký tự!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (password != confirmPassword)
+            {
+                MessageBox.Show("Mật khẩu không khớp!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!IsValidPhone(phone))
+            {
+                MessageBox.Show("Số điện thoại không hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            bool isRegistered = DatabaseHelper.RegisterUser(username, email, password, role, phone);
+
+            if (isRegistered)
+            {
+                MessageBox.Show("Đăng ký thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Hide();
+                MainLoginForm loginForm = new MainLoginForm(role);
+                loginForm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Đăng ký thất bại! Vui lòng thử lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        // ✅ Kiểm tra định dạng Email
+        private bool IsValidEmail(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        // ✅ Kiểm tra định dạng số điện thoại
+        private bool IsValidPhone(string phone)
+        {
+            return System.Text.RegularExpressions.Regex.IsMatch(phone, @"^0\d{9}$");
+        }
+
     }
 }

@@ -39,6 +39,7 @@
             panel2 = new Panel();
             panel3 = new Panel();
             panel4 = new Panel();
+            lblRole = new Label();
             registerLinkLabel = new LinkLabel();
             forgotpswLinkLabel = new LinkLabel();
             emailLabel = new Label();
@@ -150,6 +151,7 @@
             // panel4
             // 
             panel4.BorderStyle = BorderStyle.FixedSingle;
+            panel4.Controls.Add(lblRole);
             panel4.Controls.Add(logoBox);
             panel4.Controls.Add(registerLinkLabel);
             panel4.Controls.Add(labelMenu);
@@ -163,6 +165,16 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(609, 609);
             panel4.TabIndex = 9;
+            panel4.Paint += panel4_Paint;
+            // 
+            // lblRole
+            // 
+            lblRole.AutoSize = true;
+            lblRole.Location = new Point(157, 132);
+            lblRole.Name = "lblRole";
+            lblRole.Size = new Size(230, 20);
+            lblRole.TabIndex = 9;
+            lblRole.Text = "Bạn đang đăng nhập với vai trò ...";
             // 
             // registerLinkLabel
             // 
@@ -288,5 +300,6 @@
         private LinkLabel registerLinkLabel;
         private LinkLabel forgotpswLinkLabel;
         private Panel panel4;
+        private Label lblRole;
     }
 }

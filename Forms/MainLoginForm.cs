@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RentHouseMaster.Services;
 
 namespace RentHouseMaster.Forms
 {
@@ -14,6 +15,27 @@ namespace RentHouseMaster.Forms
     {
 
         public Point MouseLocation;
+        private string userRole;
+        public MainLoginForm(string role)
+        {
+            InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+            userRole = role;
+            if (userRole == "ChuNha")
+            {
+                lblRole.Text = "Bạn đang đăng nhập với vai trò : Chủ Nhà " ;
+            }
+            else if (userRole == "Nhân Viên")
+            {
+                lblRole.Text = "Bạn đang đăng nhập với vai trò : Nhân Viên ";
+            }
+            else
+            {
+                lblRole.Text = "Bạn đang đăng nhập với vai trò : Khách Thuê ";
+            }
+
+        }
+
         public MainLoginForm()
         {
             InitializeComponent();
@@ -28,7 +50,7 @@ namespace RentHouseMaster.Forms
             {
                 Application.Exit();
             }
-            
+
         }
 
         //minimize the app
@@ -55,11 +77,22 @@ namespace RentHouseMaster.Forms
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Đăng nhập thành công!");
-            this.Hide();
+            string email = emailBox.Text;
+            string password = pswBox.Text;
 
-            MainMenuForm mainMenuForm = new MainMenuForm();
-            mainMenuForm.Show();
+            if (DatabaseHelper.CheckLogin(email, password, userRole))
+            {
+                MessageBox.Show("Đăng nhập thành công!");
+                this.Hide();
+                MainMenuForm mainMenuForm = new MainMenuForm();
+                mainMenuForm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Email hoặc mật khẩu không đúng!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
         }
 
         private void forgotpswLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -74,6 +107,11 @@ namespace RentHouseMaster.Forms
             this.Hide();
             MainRegisterForm registerForm = new MainRegisterForm();
             registerForm.Show();
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
