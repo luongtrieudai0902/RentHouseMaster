@@ -29,16 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainRegisterForm));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panelMenu = new Panel();
             panelMenuBtn = new Panel();
             btnMinimize = new Button();
@@ -46,22 +36,28 @@
             panel1 = new Panel();
             panel2 = new Panel();
             panel3 = new Panel();
-            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            fullNameBox = new Guna.UI2.WinForms.Guna2TextBox();
-            label4 = new Label();
-            registerBtn = new Guna.UI2.WinForms.Guna2Button();
+            panel4 = new Panel();
+            lblRole = new Label();
+            cbRole = new ComboBox();
+            lblPhone = new Label();
+            txtPhone = new TextBox();
+            txtConfirmPassword = new TextBox();
+            lblConfirmPassword = new Label();
+            nameLabel = new Label();
+            txtName = new TextBox();
+            logoBox = new PictureBox();
+            labelMenu = new Label();
             loginLinkLabel = new LinkLabel();
-            pswBox = new Guna.UI2.WinForms.Guna2TextBox();
-            emailBox = new Guna.UI2.WinForms.Guna2TextBox();
-            pictureBox1 = new PictureBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
+            emalLabel = new Label();
+            registerBtn = new Button();
+            txtEmail = new TextBox();
+            txtPassword = new TextBox();
+            pswLabel = new Label();
             panelMenu.SuspendLayout();
             panelMenuBtn.SuspendLayout();
             panel3.SuspendLayout();
-            guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)logoBox).BeginInit();
             SuspendLayout();
             // 
             // panelMenu
@@ -131,85 +127,136 @@
             // panel3
             // 
             panel3.BackColor = Color.White;
-            panel3.Controls.Add(guna2Panel1);
+            panel3.Controls.Add(panel4);
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(290, 59);
             panel3.Name = "panel3";
             panel3.Size = new Size(842, 918);
             panel3.TabIndex = 6;
             // 
-            // guna2Panel1
+            // panel4
             // 
-            guna2Panel1.BorderColor = Color.DimGray;
-            guna2Panel1.BorderRadius = 14;
-            guna2Panel1.BorderThickness = 1;
-            guna2Panel1.Controls.Add(fullNameBox);
-            guna2Panel1.Controls.Add(label4);
-            guna2Panel1.Controls.Add(registerBtn);
-            guna2Panel1.Controls.Add(loginLinkLabel);
-            guna2Panel1.Controls.Add(pswBox);
-            guna2Panel1.Controls.Add(emailBox);
-            guna2Panel1.Controls.Add(pictureBox1);
-            guna2Panel1.Controls.Add(label1);
-            guna2Panel1.Controls.Add(label2);
-            guna2Panel1.Controls.Add(label3);
-            guna2Panel1.CustomizableEdges = customizableEdges9;
-            guna2Panel1.Location = new Point(129, 142);
-            guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2Panel1.ShadowDecoration.Shadow = new Padding(9);
-            guna2Panel1.Size = new Size(609, 698);
-            guna2Panel1.TabIndex = 17;
+            panel4.BorderStyle = BorderStyle.FixedSingle;
+            panel4.Controls.Add(lblRole);
+            panel4.Controls.Add(cbRole);
+            panel4.Controls.Add(lblPhone);
+            panel4.Controls.Add(txtPhone);
+            panel4.Controls.Add(txtConfirmPassword);
+            panel4.Controls.Add(lblConfirmPassword);
+            panel4.Controls.Add(nameLabel);
+            panel4.Controls.Add(txtName);
+            panel4.Controls.Add(logoBox);
+            panel4.Controls.Add(labelMenu);
+            panel4.Controls.Add(loginLinkLabel);
+            panel4.Controls.Add(emalLabel);
+            panel4.Controls.Add(registerBtn);
+            panel4.Controls.Add(txtEmail);
+            panel4.Controls.Add(txtPassword);
+            panel4.Controls.Add(pswLabel);
+            panel4.Location = new Point(132, 84);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(609, 807);
+            panel4.TabIndex = 10;
             // 
-            // fullNameBox
+            // lblRole
             // 
-            fullNameBox.BorderColor = Color.DimGray;
-            fullNameBox.BorderRadius = 7;
-            fullNameBox.CustomizableEdges = customizableEdges1;
-            fullNameBox.DefaultText = "";
-            fullNameBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            fullNameBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            fullNameBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            fullNameBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            fullNameBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            fullNameBox.Font = new Font("Segoe UI", 9F);
-            fullNameBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            fullNameBox.Location = new Point(58, 194);
-            fullNameBox.Margin = new Padding(3, 4, 3, 4);
-            fullNameBox.Name = "fullNameBox";
-            fullNameBox.PlaceholderText = "Nguyen Van A";
-            fullNameBox.SelectedText = "";
-            fullNameBox.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            fullNameBox.Size = new Size(489, 53);
-            fullNameBox.TabIndex = 20;
+            lblRole.AutoSize = true;
+            lblRole.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblRole.Location = new Point(70, 597);
+            lblRole.Name = "lblRole";
+            lblRole.Size = new Size(130, 28);
+            lblRole.TabIndex = 16;
+            lblRole.Text = "Vai trò (Role)";
             // 
-            // label4
+            // cbRole
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(58, 150);
-            label4.Name = "label4";
-            label4.Size = new Size(114, 31);
-            label4.TabIndex = 19;
-            label4.Text = "Họ và tên";
+            cbRole.FormattingEnabled = true;
+            cbRole.Items.AddRange(new object[] { "Chủ Nhà (Owner)", "Nhân Viên Quản Lý (Manager)", "Khách Thuê (Tenant)" });
+            cbRole.Location = new Point(70, 628);
+            cbRole.Name = "cbRole";
+            cbRole.Size = new Size(445, 28);
+            cbRole.TabIndex = 15;
             // 
-            // registerBtn
+            // lblPhone
             // 
-            registerBtn.BorderRadius = 9;
-            registerBtn.CustomizableEdges = customizableEdges3;
-            registerBtn.DisabledState.BorderColor = Color.DarkGray;
-            registerBtn.DisabledState.CustomBorderColor = Color.DarkGray;
-            registerBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            registerBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            registerBtn.FillColor = Color.FromArgb(70, 197, 100);
-            registerBtn.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            registerBtn.ForeColor = Color.White;
-            registerBtn.Location = new Point(58, 564);
-            registerBtn.Name = "registerBtn";
-            registerBtn.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            registerBtn.Size = new Size(489, 71);
-            registerBtn.TabIndex = 18;
-            registerBtn.Text = "Đăng ký";
+            lblPhone.AutoSize = true;
+            lblPhone.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPhone.Location = new Point(70, 331);
+            lblPhone.Name = "lblPhone";
+            lblPhone.Size = new Size(293, 28);
+            lblPhone.TabIndex = 14;
+            lblPhone.Text = "Số điện thoại (Phone Number)";
+            // 
+            // txtPhone
+            // 
+            txtPhone.BorderStyle = BorderStyle.FixedSingle;
+            txtPhone.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtPhone.Location = new Point(70, 372);
+            txtPhone.Name = "txtPhone";
+            txtPhone.PlaceholderText = "0123456789";
+            txtPhone.Size = new Size(445, 34);
+            txtPhone.TabIndex = 13;
+            // 
+            // txtConfirmPassword
+            // 
+            txtConfirmPassword.BorderStyle = BorderStyle.FixedSingle;
+            txtConfirmPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtConfirmPassword.Location = new Point(70, 552);
+            txtConfirmPassword.Name = "txtConfirmPassword";
+            txtConfirmPassword.PasswordChar = '*';
+            txtConfirmPassword.PlaceholderText = "*******";
+            txtConfirmPassword.Size = new Size(445, 34);
+            txtConfirmPassword.TabIndex = 12;
+            // 
+            // lblConfirmPassword
+            // 
+            lblConfirmPassword.AutoSize = true;
+            lblConfirmPassword.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblConfirmPassword.Location = new Point(70, 505);
+            lblConfirmPassword.Name = "lblConfirmPassword";
+            lblConfirmPassword.Size = new Size(371, 28);
+            lblConfirmPassword.TabIndex = 11;
+            lblConfirmPassword.Text = "Xác nhận mật khẩu (Confirm Password)";
+            // 
+            // nameLabel
+            // 
+            nameLabel.AutoSize = true;
+            nameLabel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            nameLabel.Location = new Point(70, 150);
+            nameLabel.Name = "nameLabel";
+            nameLabel.Size = new Size(219, 28);
+            nameLabel.TabIndex = 9;
+            nameLabel.Text = "Họ và tên (User name)";
+            // 
+            // txtName
+            // 
+            txtName.BorderStyle = BorderStyle.FixedSingle;
+            txtName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtName.Location = new Point(70, 196);
+            txtName.Name = "txtName";
+            txtName.PlaceholderText = "Nguyễn Van Ví Vụ";
+            txtName.Size = new Size(445, 34);
+            txtName.TabIndex = 10;
+            // 
+            // logoBox
+            // 
+            logoBox.Image = Properties.Resources.Logo;
+            logoBox.Location = new Point(270, 26);
+            logoBox.Name = "logoBox";
+            logoBox.Size = new Size(50, 50);
+            logoBox.SizeMode = PictureBoxSizeMode.Zoom;
+            logoBox.TabIndex = 0;
+            logoBox.TabStop = false;
+            // 
+            // labelMenu
+            // 
+            labelMenu.AutoSize = true;
+            labelMenu.Font = new Font("Nirmala UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelMenu.Location = new Point(225, 91);
+            labelMenu.Name = "labelMenu";
+            labelMenu.Size = new Size(145, 23);
+            labelMenu.TabIndex = 1;
+            labelMenu.Text = "RentHouseMaster";
             // 
             // loginLinkLabel
             // 
@@ -217,98 +264,69 @@
             loginLinkLabel.AutoSize = true;
             loginLinkLabel.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             loginLinkLabel.LinkColor = Color.Black;
-            loginLinkLabel.Location = new Point(232, 657);
+            loginLinkLabel.Location = new Point(216, 773);
             loginLinkLabel.Name = "loginLinkLabel";
             loginLinkLabel.Size = new Size(154, 23);
-            loginLinkLabel.TabIndex = 12;
+            loginLinkLabel.TabIndex = 7;
             loginLinkLabel.TabStop = true;
             loginLinkLabel.Text = "Tôi đã có tài khoản";
             loginLinkLabel.LinkClicked += loginLinkLabel_LinkClicked;
             // 
-            // pswBox
+            // emalLabel
             // 
-            pswBox.BorderColor = Color.DimGray;
-            pswBox.BorderRadius = 7;
-            pswBox.CustomizableEdges = customizableEdges5;
-            pswBox.DefaultText = "";
-            pswBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            pswBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            pswBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            pswBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            pswBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            pswBox.Font = new Font("Segoe UI", 9F);
-            pswBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            pswBox.Location = new Point(58, 474);
-            pswBox.Margin = new Padding(3, 4, 3, 4);
-            pswBox.Name = "pswBox";
-            pswBox.PasswordChar = '*';
-            pswBox.PlaceholderText = "*******";
-            pswBox.SelectedText = "";
-            pswBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            pswBox.Size = new Size(489, 53);
-            pswBox.TabIndex = 17;
+            emalLabel.AutoSize = true;
+            emalLabel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            emalLabel.Location = new Point(70, 233);
+            emalLabel.Name = "emalLabel";
+            emalLabel.Size = new Size(60, 28);
+            emalLabel.TabIndex = 2;
+            emalLabel.Text = "Email";
             // 
-            // emailBox
+            // registerBtn
             // 
-            emailBox.BorderColor = Color.DimGray;
-            emailBox.BorderRadius = 7;
-            emailBox.CustomizableEdges = customizableEdges7;
-            emailBox.DefaultText = "";
-            emailBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            emailBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            emailBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            emailBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            emailBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            emailBox.Font = new Font("Segoe UI", 9F);
-            emailBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            emailBox.Location = new Point(58, 335);
-            emailBox.Margin = new Padding(3, 4, 3, 4);
-            emailBox.Name = "emailBox";
-            emailBox.PlaceholderText = "vidu@gmail.com";
-            emailBox.SelectedText = "";
-            emailBox.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            emailBox.Size = new Size(489, 53);
-            emailBox.TabIndex = 16;
+            registerBtn.BackColor = Color.FromArgb(70, 197, 100);
+            registerBtn.FlatAppearance.BorderSize = 0;
+            registerBtn.FlatStyle = FlatStyle.Flat;
+            registerBtn.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            registerBtn.ForeColor = Color.White;
+            registerBtn.Location = new Point(70, 679);
+            registerBtn.Name = "registerBtn";
+            registerBtn.Size = new Size(445, 78);
+            registerBtn.TabIndex = 6;
+            registerBtn.Text = "Đăng ký";
+            registerBtn.UseVisualStyleBackColor = false;
+            registerBtn.Click += registerBtn_Click;
             // 
-            // pictureBox1
+            // txtEmail
             // 
-            pictureBox1.Image = Properties.Resources.Logo;
-            pictureBox1.Location = new Point(276, 23);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(50, 50);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 10;
-            pictureBox1.TabStop = false;
+            txtEmail.BorderStyle = BorderStyle.FixedSingle;
+            txtEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtEmail.Location = new Point(70, 273);
+            txtEmail.Name = "txtEmail";
+            txtEmail.PlaceholderText = "vidu@gmail.com";
+            txtEmail.Size = new Size(445, 34);
+            txtEmail.TabIndex = 3;
             // 
-            // label1
+            // txtPassword
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Nirmala UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(232, 76);
-            label1.Name = "label1";
-            label1.Size = new Size(145, 23);
-            label1.TabIndex = 11;
-            label1.Text = "RentHouseMaster";
+            txtPassword.BorderStyle = BorderStyle.FixedSingle;
+            txtPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtPassword.Location = new Point(70, 459);
+            txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
+            txtPassword.PlaceholderText = "*******";
+            txtPassword.Size = new Size(445, 34);
+            txtPassword.TabIndex = 5;
             // 
-            // label2
+            // pswLabel
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(58, 291);
-            label2.Name = "label2";
-            label2.Size = new Size(70, 31);
-            label2.TabIndex = 12;
-            label2.Text = "Email";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(58, 422);
-            label3.Name = "label3";
-            label3.Size = new Size(111, 31);
-            label3.TabIndex = 13;
-            label3.Text = "Mật khẩu";
+            pswLabel.AutoSize = true;
+            pswLabel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            pswLabel.Location = new Point(70, 428);
+            pswLabel.Name = "pswLabel";
+            pswLabel.Size = new Size(203, 28);
+            pswLabel.TabIndex = 4;
+            pswLabel.Text = "Mật khẩu (Password)";
             // 
             // MainRegisterForm
             // 
@@ -325,9 +343,9 @@
             panelMenu.ResumeLayout(false);
             panelMenuBtn.ResumeLayout(false);
             panel3.ResumeLayout(false);
-            guna2Panel1.ResumeLayout(false);
-            guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)logoBox).EndInit();
             ResumeLayout(false);
         }
 
@@ -340,16 +358,22 @@
         private Panel panel1;
         private Panel panel2;
         private Panel panel3;
+        private Panel panel4;
+        private Label nameLabel;
+        private TextBox txtName;
+        private PictureBox logoBox;
+        private Label labelMenu;
         private LinkLabel loginLinkLabel;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Button registerBtn;
-        private Guna.UI2.WinForms.Guna2TextBox pswBox;
-        private Guna.UI2.WinForms.Guna2TextBox emailBox;
-        private PictureBox pictureBox1;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox fullNameBox;
-        private Label label4;
+        private Label emalLabel;
+        private Button registerBtn;
+        private TextBox txtEmail;
+        private TextBox txtPassword;
+        private Label pswLabel;
+        private TextBox txtConfirmPassword;
+        private Label lblPhone;
+        private TextBox txtPhone;
+        private ComboBox cbRole;
+        private Label lblRole;
+        private Label lblConfirmPassword;
     }
 }

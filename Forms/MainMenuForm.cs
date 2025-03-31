@@ -8,6 +8,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic.ApplicationServices;
+using RentHouseMaster.Models;
 
 namespace RentHouseMaster.Forms
 {
@@ -18,9 +20,33 @@ namespace RentHouseMaster.Forms
         // Dictionary to store default icons
         private Dictionary<Button, Image> defaultIcons = new Dictionary<Button, Image>();
 
+        private UserModel loggedInUser = null;
+       
+        public MainMenuForm(UserModel user)
+        {
+            InitializeComponent();
+
+            this.loggedInUser = user;
+
+            // Hiển thị thông tin người dùng lên giao diện
+            if (loggedInUser != null)
+            {
+                lblEmail.Text = loggedInUser.Email;
+                lblUsername.Text = loggedInUser.Username;
+            }
+           
+
+            this.FormBorderStyle = FormBorderStyle.None; // Remove window border
+            subPanelForAccomo.Visible = false;
+            subPanelForServices.Visible = false;
+            subPanelForTools.Visible = false;
+        }
+
+
         public MainMenuForm()
         {
             InitializeComponent();
+            
             this.FormBorderStyle = FormBorderStyle.None; // Remove window border
             subPanelForAccomo.Visible = false;
             subPanelForServices.Visible = false;

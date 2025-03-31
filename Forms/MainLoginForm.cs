@@ -1,65 +1,71 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using RentHouseMaster.Models;
+using RentHouseMaster.Services;
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RentHouseMaster.Forms
 {
     public partial class MainLoginForm : Form
     {
+        private string userRole;
 
-        public Point MouseLocation;
+        public MainLoginForm(string role)
+        {
+            InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+            userRole = role;
+
+            lblRole.Text = role switch
+            {
+                "ChuNha" => "Bạn đang đăng nhập với vai trò: Chủ Nhà",
+                "NhanVien" => "Bạn đang đăng nhập với vai trò: Nhân Viên",
+                _ => "Bạn đang đăng nhập với vai trò: Khách Thuê"
+            };
+        }
+
         public MainLoginForm()
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
         }
 
-        //close the app
         private void btnClose_Click(object sender, EventArgs e)
         {
-            DialogResult dialog = MessageBox.Show("Bạn có muốn thoát chương trình không?", "Thoát chương trình", MessageBoxButtons.YesNo);
-            if (dialog == DialogResult.Yes)
+            if (MessageBox.Show("Bạn có muốn thoát chương trình không?", "Thoát chương trình", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 Application.Exit();
             }
-            
         }
 
-        //minimize the app
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
 
-        //for movable form
-        private void mouse_Down(object sender, MouseEventArgs e)
-        {
-            MouseLocation = new Point(-e.X, -e.Y);
-        }
-
-        private void mouse_Move(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                Point newMousePoint = Control.MousePosition;
-                newMousePoint.Offset(MouseLocation.X, MouseLocation.Y);
-                Location = newMousePoint;
-            }
-        }
-
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Đăng nhập thành công!");
-            this.Hide();
+            UserRepository userRepo = new UserRepository();
 
-            MainMenuForm mainMenuForm = new MainMenuForm();
-            mainMenuForm.Show();
+            UserModel user = new UserModel
+            {
+                Username = userRepo.GetUserName(emailBox.Text),
+                Email = emailBox.Text,
+                Password = pswBox.Text,
+                Role = userRole
+            };
+
+            if (AuthService.Login(user))
+            {
+                MessageBox.Show("Đăng nhập thành công!");
+                this.Close();
+                MainMenuForm mainMenuForm = new MainMenuForm(user);
+                mainMenuForm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Email hoặc mật khẩu không đúng!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void forgotpswLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

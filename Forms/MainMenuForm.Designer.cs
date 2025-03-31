@@ -66,8 +66,8 @@
             searchBox = new TextBox();
             searchPic = new PictureBox();
             userProfilePanel = new Panel();
-            label1 = new Label();
-            usernameLabel = new Label();
+            lblEmail = new Label();
+            lblUsername = new Label();
             userPic = new PictureBox();
             contentPanel = new Panel();
             panelMenu.SuspendLayout();
@@ -580,8 +580,8 @@
             // 
             // userProfilePanel
             // 
-            userProfilePanel.Controls.Add(label1);
-            userProfilePanel.Controls.Add(usernameLabel);
+            userProfilePanel.Controls.Add(lblEmail);
+            userProfilePanel.Controls.Add(lblUsername);
             userProfilePanel.Controls.Add(userPic);
             userProfilePanel.Dock = DockStyle.Top;
             userProfilePanel.Location = new Point(0, 0);
@@ -589,26 +589,26 @@
             userProfilePanel.Size = new Size(250, 88);
             userProfilePanel.TabIndex = 0;
             // 
-            // label1
+            // lblEmail
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.White;
-            label1.ForeColor = Color.DarkGray;
-            label1.Location = new Point(94, 52);
-            label1.Name = "label1";
-            label1.Size = new Size(121, 20);
-            label1.TabIndex = 2;
-            label1.Text = "vidu@gmail.com";
+            lblEmail.AutoSize = true;
+            lblEmail.BackColor = Color.White;
+            lblEmail.ForeColor = Color.DarkGray;
+            lblEmail.Location = new Point(94, 52);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(121, 20);
+            lblEmail.TabIndex = 2;
+            lblEmail.Text = "vidu@gmail.com";
             // 
-            // usernameLabel
+            // lblUsername
             // 
-            usernameLabel.AutoSize = true;
-            usernameLabel.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            usernameLabel.Location = new Point(94, 22);
-            usernameLabel.Name = "usernameLabel";
-            usernameLabel.Size = new Size(104, 25);
-            usernameLabel.TabIndex = 1;
-            usernameLabel.Text = "User Name";
+            lblUsername.AutoSize = true;
+            lblUsername.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblUsername.Location = new Point(94, 22);
+            lblUsername.Name = "lblUsername";
+            lblUsername.Size = new Size(104, 25);
+            lblUsername.TabIndex = 1;
+            lblUsername.Text = "User Name";
             // 
             // userPic
             // 
@@ -706,8 +706,8 @@
         private Panel searchBar;
         private TextBox searchBox;
         private PictureBox searchPic;
-        private Label label1;
-        private Label usernameLabel;
+        private Label lblEmail;
+        private Label lblUsername;
         private PictureBox userPic;
     }
 }
